@@ -1,8 +1,8 @@
 ## Associated Ticket
 [nameOfLink](url)
 
-## Expected Behavior
-
+## Description 
+Example text that represents the overview, the expected behaviors, and purpose.
 
 ## Migrations
 - [ ] Yes
