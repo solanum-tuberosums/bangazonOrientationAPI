@@ -1,5 +1,3 @@
-<p style="text-align: center;"><center>🥔</center></p>
-
 ## Associated Ticket
 [nameOfLink](url)
 
@@ -10,3 +8,4 @@ Example text that represents the overview, the expected behaviors, and purpose.
 - [ ] Yes
 - [x] No
 
+                <p style="text-align: center;"><center>🥔</center></p>
