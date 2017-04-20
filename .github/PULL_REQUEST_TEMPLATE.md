@@ -2,7 +2,8 @@
 [nameOfLink](url)
 
 ## Expected Behavior
-example test
+This simplifies the display of ...
+This now handles that ...
 
 ## Migrations
 - [ ] Yes
