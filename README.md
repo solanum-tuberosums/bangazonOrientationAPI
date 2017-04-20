@@ -1,7 +1,6 @@
-# bangazonOrientationAPI
-An open API for Bangazon, a fictitious company of Nashville Software School, built with the Django REST framework.
-
 # Bangazon Orientation API
+
+An open API for Bangazon, a fictitious company of Nashville Software School, built with the Django REST framework.
 
 ## Requirements
 
