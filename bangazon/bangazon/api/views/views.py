@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from bangazon.api.serializers.serializers import *
+from bangazon.api.serializers import *
 from bangazon.api.models.models import *
 
 
@@ -10,7 +10,7 @@ class UserViewSet(viewsets.ModelViewSet):
     API endpoint that allows users to be viewed or edited.
     """
     queryset = User.objects.all().order_by('-date_joined')
-    serializer_class = UserSerializer
+    serializer_class = userserializer.UserSerializer
 
 
 class GroupViewSet(viewsets.ModelViewSet):
@@ -18,4 +18,4 @@ class GroupViewSet(viewsets.ModelViewSet):
     API endpoint that allows groups to be viewed or edited.
     """
     queryset = Group.objects.all()
-    serializer_class = GroupSerializer
+    serializer_class = groupserializer.GroupSerializer
