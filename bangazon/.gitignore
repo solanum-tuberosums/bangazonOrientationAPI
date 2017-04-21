@@ -10,7 +10,8 @@
 /*.DS_Store
 *.DS_Store
 
-
+bangazon/bangazon/api/migrations
+bangazon/bangazon/api/migrations
 
 ####################################
 ### AUTO-GENERATED IGNORED FILES ###
