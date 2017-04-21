@@ -17,10 +17,12 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework import routers
 from bangazon.api.views import views
+from bangazon.api.views import view_payment_type
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'payment_types', view_payment_type.PaymentTypeViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
