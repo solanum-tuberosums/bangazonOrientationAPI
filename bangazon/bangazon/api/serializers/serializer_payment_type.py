@@ -1,9 +1,16 @@
+"""
+bangazon api serializer configuration for payment type
+"""
 from rest_framework import serializers
 from bangazon.api.models.model_payment_type import *
 
 
 class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = PaymentType
-        fields = ('url', 'accountLabel', 'accountType', 'accountNumber')
-        depth = 1
+	'''
+	Converts the PaymentType into python data types. Excluding no fields.
+	Author: Blaise Roberts
+	'''
+	class Meta:
+		model = PaymentType
+		exclude = ()
+		depth = 1

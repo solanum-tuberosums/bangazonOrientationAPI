@@ -1,14 +1,19 @@
+"""
+bangazon api model configuration for payment type
+"""
 from django.db import models
 
 # Create your models here.
 class PaymentType(models.Model):
-	'''This class represents our payment type resource and have 4 data fields.
+	'''This class represents our payment type resource defines 4 data fields.
 
 	DataFields:
 		accountLabel
 		accountType
 		accountNumber
 		customerID [Links to Customer(CustomerID) with a foregin key]
+
+	Author: Blaise Roberts	
 	'''
 	accountLabel = models.CharField(max_length=20)
 	accountType = models.CharField(max_length=20)
