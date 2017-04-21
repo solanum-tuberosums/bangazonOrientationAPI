@@ -1,6 +1,6 @@
-__all__ = ['customer_serializer', 'order_serializer',
-           'product_serializer', 'order_products_serializer',
-           'department_serializer', 'computer_serializer',
-           'training_program_serializer', 'product_type_serializer',
-           'costumer_serializer'
+__all__ = ['serializer_customer', 'serializer_order',
+           'serializer_product', 'serializer_order_products',
+           'serializer_department', 'serializer_computer',
+           'serializer_training_program', 'serializer_product_type',
+           'serializer_costumer'
            ]

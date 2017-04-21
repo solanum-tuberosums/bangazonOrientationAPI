@@ -1,6 +1,6 @@
-__all__ = ['customer_model', 'order_model',
-           'product_model', 'order_products_model',
-           'department_model', 'computer_model',
-           'training_program_model', 'product_type_model',
-           'costumer_model'
+__all__ = ['model_customer', 'model_order',
+           'model_product', 'model_order_products',
+           'model_department', 'model_computer',
+           'model_training_program', 'model_product_type',
+           'model_costumer'
            ]
