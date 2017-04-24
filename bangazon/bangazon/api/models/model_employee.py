@@ -3,6 +3,7 @@ bangazon api model Configuration for employee
 """
 
 from django.db import models
+from bangazon.api.models.model_department import Department
 
 class Employee(models.Model):
     '''This class represents a employee that defines four data fields. 
@@ -24,6 +25,6 @@ class Employee(models.Model):
     FirstName = models.CharField(max_length=50)
     LastName = models.CharField(max_length=50)
     IsSupervisor = models.IntegerField(default=0, choices=options)
-    #DepartmentID = models.ForeignKey(Department)
+    DepartmentID = models.ForeignKey(Department)
 
 

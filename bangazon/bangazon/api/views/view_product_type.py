@@ -12,7 +12,7 @@ class ProductTypeViewSet(viewsets.ModelViewSet):
     API endpoint that allows users to view all in product type table.
 
     Author:
-    	Adam Myers
+        Adam Myers
     """
     queryset = ProductType.objects.all()
     serializer_class = ProductTypeSerializer
