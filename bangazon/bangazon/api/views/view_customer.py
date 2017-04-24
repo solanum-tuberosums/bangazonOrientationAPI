@@ -1,4 +1,3 @@
-from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from bangazon.api.serializers import serializer_customer
 from bangazon.api.models import model_customer
