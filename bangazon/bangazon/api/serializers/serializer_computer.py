@@ -1,6 +1,6 @@
 
 """
-bangazon api serializer configuration for order
+bangazon api serializer configuration for computer
 """
 
 from rest_framework import serializers
@@ -18,3 +18,4 @@ class ComputerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Computer
         exclude = ()
+
