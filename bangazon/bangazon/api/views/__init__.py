@@ -6,7 +6,16 @@ from bangazon.api.views.view_training_program import TrainingProgramViewSet
 from bangazon.api.views.view_payment_type import PaymentTypeViewSet
 from bangazon.api.views.view_department import DepartmentViewSet
 from bangazon.api.views.view_computer import ComputerViewSet
+from bangazon.api.views.view_employee import EmployeeViewSet
 
-
-# __all__ = ['ProductTypeViewSet',
-#            'ProductViewSet', 'CustomerViewSet','OrderViewSet', 'TrainingProgramViewSet', 'PaymentTypeViewSet', 'DepartmentViewSet', 'ComputerViewSet']
+__all__ = [
+    'ProductTypeViewSet',
+    'ProductViewSet',
+    'CustomerViewSet',
+    'OrderViewSet',
+    'TrainingProgramViewSet',
+    'PaymentTypeViewSet',
+    'DepartmentViewSet',
+    'EmployeeViewSet',
+    'ComputerViewSet',
+    ]
