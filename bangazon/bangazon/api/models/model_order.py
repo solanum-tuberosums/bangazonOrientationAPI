@@ -3,6 +3,8 @@ bangazon api model configuration for order
 """
 
 from django.db import models
+from django.core.validators import MaxLengthValidator
+
 
 class Order(models.Model):
 
@@ -16,7 +18,7 @@ class Order(models.Model):
 	Author: Jeremy Bakker
 	"""
 
-	PaymentTypeID = models.BigIntegerField()
+	PaymentTypeID = models.DecimalField(max_digits = 20, decimal_places = 0)
 	OrderDate = models.DateField()
 	# CustomerID = models.ForeignKey(Customer)
 
