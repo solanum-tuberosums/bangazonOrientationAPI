@@ -10,7 +10,7 @@ class Employee(models.Model):
     Data Fields: 
         firstname [Refers to the name of the employee]
         lastname [Refers to the name of the employee]
-        issupervisor [Refers to whether an employee is a supervisor (0 for no, 1 for no)]
+        issupervisor [Refers to whether an employee is a supervisor (0 for False, 1 for True)]
         departmentid [Refers to the Department(DepartmentID) the employee is assigned to with a foreign key]
 
     Author:
