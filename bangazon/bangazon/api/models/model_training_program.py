@@ -16,7 +16,15 @@ class TrainingProgram(models.Model):
     Author:
         Adam Myers
     '''
-    name = models.CharField(max_length=50)
-    startdate = models.DateField()
-    enddate = models.DateField()
-    maxenrollment = models.SmallIntegerField()
+    Name = models.CharField(max_length=50)
+    StartDate = models.DateField()
+    EndDate = models.DateField()
+    MaxEnrollment = models.SmallIntegerField()
+
+    def __str__(self):
+        """ Retrieves the value of Name
+
+        Arguments:
+            n/a
+        """
+        return self.Name
