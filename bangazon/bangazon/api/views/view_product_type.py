@@ -1,10 +1,10 @@
 """
 bangazon api view Configuration for product type
 """
-
 from rest_framework import viewsets
-from bangazon.api.serializers.serializer_product_type import *
-from bangazon.api.models.model_product_type import *
+
+from bangazon.api.serializers.serializer_product_type import ProductTypeSerializer
+from bangazon.api.models.model_product_type import ProductType
 
 
 class ProductTypeViewSet(viewsets.ModelViewSet):

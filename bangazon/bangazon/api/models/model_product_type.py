@@ -7,7 +7,7 @@ from django.db import models
 class ProductType(models.Model):
     '''This class represents a product type that defines one data fields. 
 
-    Data Fields: 
+    Data Fields:
         label [Refers to the name of the product type.]
 
     Author:
