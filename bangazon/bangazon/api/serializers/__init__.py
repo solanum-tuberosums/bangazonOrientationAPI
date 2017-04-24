@@ -1,6 +1,6 @@
-__all__ = ['serializer_customer', 'serializer_order',
-           'serializer_product', 'serializer_order_products',
-           'serializer_department', 'serializer_computer',
-           'serializer_training_program', 'serializer_product_type',
-           'serializer_costumer'
-           ]
+from bangazon.api.serializers.serializer_customer import CustomerSerializer
+from bangazon.api.serializers.serializer_product import ProductSerializer
+from bangazon.api.serializers.serializer_product_type import ProductTypeSerializer
+
+__all__ = ['CustomerSerializer', 'ProductSerializer',
+           'ProductTypeSerializer']
