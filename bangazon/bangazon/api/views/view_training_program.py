@@ -11,7 +11,7 @@ class TrainingProgramViewSet(viewsets.ModelViewSet):
     API endpoint that allows users to view all in training program table.
 
     Author:
-    	Adam Myers
+        Adam Myers
     """
     queryset = TrainingProgram.objects.all()
     serializer_class = TrainingProgramSerializer

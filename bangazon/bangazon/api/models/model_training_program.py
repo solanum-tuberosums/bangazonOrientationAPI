@@ -5,8 +5,8 @@ bangazon api model Configuration for product type
 from django.db import models
 
 class TrainingProgram(models.Model):
-	'''This class represents a product type that defines one data fields.
-	 
+    '''This class represents a product type that defines one data fields.
+     
     Data Fields: 
         name [Refers to the name of the training program]
         startdate [Refers to the program's start date]
@@ -14,9 +14,9 @@ class TrainingProgram(models.Model):
         maxenrollment [Refers to the maximum number of enrollee's for the program]
 
     Author:
-    	Adam Myers
+        Adam Myers
     '''
-	name = models.CharField(max_length=50)
-	startdate = models.DateField()
-	enddate = models.DateField()
-	maxenrollment = models.SmallIntegerField()
+    name = models.CharField(max_length=50)
+    startdate = models.DateField()
+    enddate = models.DateField()
+    maxenrollment = models.SmallIntegerField()
