@@ -10,6 +10,7 @@ router.register(r'products', ProductViewSet)
 router.register(r'product_type', ProductTypeViewSet)
 router.register(r'customers', CustomerViewSet)
 router.register(r'order', OrderViewSet)
+router.register(r'employee', EmployeeViewSet)
 router.register(r'training_program', TrainingProgramViewSet)
 router.register(r'department', DepartmentViewSet)
 
