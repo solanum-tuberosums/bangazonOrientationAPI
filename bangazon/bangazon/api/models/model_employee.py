@@ -5,7 +5,7 @@ bangazon api model Configuration for employee
 from django.db import models
 
 class Employee(models.Model):
-    '''This class represents a employee that defines three data fields. 
+    '''This class represents a employee that defines four data fields. 
 
     Data Fields: 
         firstname [Refers to the name of the employee]
