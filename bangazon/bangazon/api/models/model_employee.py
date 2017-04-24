@@ -1,5 +1,5 @@
 """
-bangazon api model Configuration for product type
+bangazon api model Configuration for employee
 """
 
 from django.db import models

@@ -1,5 +1,5 @@
 """
-bangazon api view Configuration for product type
+bangazon api view Configuration for employee
 """
 
 from rest_framework import viewsets

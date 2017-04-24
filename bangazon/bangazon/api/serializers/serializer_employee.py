@@ -1,5 +1,5 @@
 """
-bangazon api serializer Configuration for product type
+bangazon api serializer Configuration for employee
 """
 
 from rest_framework import serializers
