@@ -16,3 +16,7 @@ class Customer(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     date_created = models.DateField()
+
+    def __str__(self):
+        return "{} {}".format(self.first_name, self.last_name)
+
