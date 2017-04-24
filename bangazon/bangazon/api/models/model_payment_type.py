@@ -20,6 +20,7 @@ class PaymentType(models.Model):
 	accountType = models.CharField(max_length=20)
 	accountNumber = models.DecimalField(max_digits=20, decimal_places=0)
 	customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+
 	def __str__(self):
 		return self.accountLabel
 	
