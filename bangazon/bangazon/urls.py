@@ -21,6 +21,7 @@ from bangazon.api.views import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'products', views.ProductViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),

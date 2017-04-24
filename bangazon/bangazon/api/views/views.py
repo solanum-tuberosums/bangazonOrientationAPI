@@ -1,8 +1,9 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from bangazon.api.serializers.serializers import *
-from bangazon.api.models.models import *
+from bangazon.api.serializers.serializers import UserSerializer, GroupSerializer
+# from bangazon.api.models.models import *
 
+from bangazon.api.views.view_product import ProductViewSet
 
 # Create your views here.
 class UserViewSet(viewsets.ModelViewSet):
@@ -19,3 +20,4 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
