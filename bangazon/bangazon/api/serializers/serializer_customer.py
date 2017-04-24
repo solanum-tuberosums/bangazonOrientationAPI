@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from bangazon.api.models import model_customer
+from bangazon.api.models.model_customer import Customer
 
 
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
@@ -14,7 +14,5 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
     """
 
     class Meta:
-        model = model_customer.Customer
-        fields = ('first_name', 'last_name',
-                  'date_created'
-                  )
+        model = Customer
+        exclude = ()

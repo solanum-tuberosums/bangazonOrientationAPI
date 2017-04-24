@@ -9,5 +9,5 @@ class CustomerViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows customers to be viewed or edited.
     """
-    queryset = User.objects.all().order_by('last_name')
+    queryset = model_customer.Customer.objects.all()
     serializer_class = serializer_customer.CustomerSerializer
