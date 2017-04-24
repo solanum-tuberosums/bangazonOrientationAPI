@@ -1,5 +1,6 @@
 
-from bangazon.api.models.models import ProductType
+from bangazon.api.models.model_product_type import ProductType
+from bangazon.api.models.model_customer import Customer
 
 # __all__ = ['model_customer', 'model_order',
 #            'model_product', 'model_order_products',

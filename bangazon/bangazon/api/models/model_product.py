@@ -1,6 +1,6 @@
 from django.db import models
 
-from bangazon.api.models import ProductType
+from bangazon.api.models import ProductType, Customer
 
 """
 This class represents a Product:
@@ -21,7 +21,7 @@ class Product(models.Model):
     Title = models.CharField(max_length=40)
     Description = models.TextField(max_length=256)
     ProductType = models.ForeignKey(ProductType)
-    # CustomerId = models.ForeignKey(Customer)
+    Customer = models.ForeignKey(Customer)
 
 
 

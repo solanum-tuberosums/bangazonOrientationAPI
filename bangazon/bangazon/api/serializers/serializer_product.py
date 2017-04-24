@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User, Group
+
 from rest_framework import serializers
 from bangazon.api.models.model_product import Product
 
@@ -14,5 +14,5 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
         exclude = ()
 
 
-        #'ProductTypeId', 'CustomerId']
+
 
