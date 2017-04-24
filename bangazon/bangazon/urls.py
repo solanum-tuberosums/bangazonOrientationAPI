@@ -13,7 +13,7 @@ from bangazon.api.views import *
 router = routers.DefaultRouter()
 router.register(r'payment_types', view_payment_type.PaymentTypeViewSet)
 router.register(r'products', ProductViewSet)
-router.register(r'producttype', ProductTypeViewSet)
+router.register(r'product_type', ProductTypeViewSet)
 router.register(r'customers', CustomerViewSet)
 router.register(r'order', OrderViewSet)
 router.register(r'department', DepartmentViewSet)
