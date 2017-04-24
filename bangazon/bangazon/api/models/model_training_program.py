@@ -1,11 +1,11 @@
 """
-bangazon api model Configuration for product type
+bangazon api model Configuration for training program
 """
 
 from django.db import models
 
 class TrainingProgram(models.Model):
-    '''This class represents a product type that defines one data fields.
+    '''This class represents a training program that defines one data fields.
      
     Data Fields: 
         name [Refers to the name of the training program]
