@@ -3,7 +3,6 @@ bangazon api model configuration for order
 """
 
 from django.db import models
-from django.core.validators import MaxLengthValidator
 from bangazon.api.models.model_customer import Customer
 
 
