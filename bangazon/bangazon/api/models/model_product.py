@@ -23,6 +23,8 @@ class Product(models.Model):
     ProductType = models.ForeignKey(ProductType)
     Customer = models.ForeignKey(Customer)
 
+    def __str__(self):
+        return self.Title
 
 
 
