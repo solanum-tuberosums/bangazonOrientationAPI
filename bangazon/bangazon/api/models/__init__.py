@@ -1,0 +1,1 @@
+from bangazon.api.models.model_product_type import ProductType

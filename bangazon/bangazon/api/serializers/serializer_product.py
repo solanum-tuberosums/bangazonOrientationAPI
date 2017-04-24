@@ -11,7 +11,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
     """
     class Meta:
         model = Product
-        fields = ['url', 'Price', 'Title', 'Description']
+        exclude = ()
 
 
         #'ProductTypeId', 'CustomerId']

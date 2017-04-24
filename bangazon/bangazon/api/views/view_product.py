@@ -1,6 +1,5 @@
-from django.contrib.auth.models import User, Group
+
 from rest_framework import viewsets
-from bangazon.api.serializers.serializers import UserSerializer, GroupSerializer
 
 
 from bangazon.api.serializers.serializer_product import ProductSerializer
