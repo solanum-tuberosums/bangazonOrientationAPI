@@ -61,7 +61,7 @@ pip install djangorestframework
 1. Set up Database
     ```
     cd bangazon
-    python manage.py makemigrations
+    python manage.py makemigrations api
     python manage.py migrate
     python manage.py loaddata alldata
     python manage.py runserver
