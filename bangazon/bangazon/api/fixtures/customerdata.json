@@ -1,0 +1,472 @@
+[
+{
+    "model": "api.producttype",
+    "pk": 1,
+    "fields": {
+        "label": "Sports"
+    }
+},
+{
+    "model": "api.producttype",
+    "pk": 2,
+    "fields": {
+        "label": "Toys"
+    }
+},
+{
+    "model": "api.producttype",
+    "pk": 4,
+    "fields": {
+        "label": "Electronics"
+    }
+},
+{
+    "model": "api.producttype",
+    "pk": 5,
+    "fields": {
+        "label": "Clothes"
+    }
+},
+{
+    "model": "api.producttype",
+    "pk": 6,
+    "fields": {
+        "label": "Automotive"
+    }
+},
+{
+    "model": "api.producttype",
+    "pk": 7,
+    "fields": {
+        "label": "Art"
+    }
+},
+{
+    "model": "api.producttype",
+    "pk": 8,
+    "fields": {
+        "label": "Food"
+    }
+},
+{
+    "model": "api.producttype",
+    "pk": 9,
+    "fields": {
+        "label": "Furniture"
+    }
+},
+{
+    "model": "api.producttype",
+    "pk": 10,
+    "fields": {
+        "label": "Outdoors"
+    }
+},
+{
+    "model": "api.producttype",
+    "pk": 11,
+    "fields": {
+        "label": "Books"
+    }
+},
+{
+    "model": "api.customer",
+    "pk": 1,
+    "fields": {
+        "first_name": "Will",
+        "last_name": "Sims",
+        "date_created": "1999-01-06"
+    }
+},
+{
+    "model": "api.customer",
+    "pk": 2,
+    "fields": {
+        "first_name": "Blaise",
+        "last_name": "Roberts",
+        "date_created": "2002-04-14"
+    }
+},
+{
+    "model": "api.customer",
+    "pk": 3,
+    "fields": {
+        "first_name": "Jeremy",
+        "last_name": "Bakker",
+        "date_created": "2011-08-10"
+    }
+},
+{
+    "model": "api.customer",
+    "pk": 4,
+    "fields": {
+        "first_name": "Zak",
+        "last_name": "Spence",
+        "date_created": "2003-07-16"
+    }
+},
+{
+    "model": "api.customer",
+    "pk": 5,
+    "fields": {
+        "first_name": "Adam",
+        "last_name": "Myers",
+        "date_created": "1997-10-25"
+    }
+},
+{
+    "model": "api.customer",
+    "pk": 6,
+    "fields": {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "date_created": "1981-02-04"
+    }
+},
+{
+    "model": "api.customer",
+    "pk": 7,
+    "fields": {
+        "first_name": "John",
+        "last_name": "Smith",
+        "date_created": "1999-05-31"
+    }
+},
+{
+    "model": "api.customer",
+    "pk": 8,
+    "fields": {
+        "first_name": "Jerry",
+        "last_name": "Garcia",
+        "date_created": "2008-10-20"
+    }
+},
+{
+    "model": "api.customer",
+    "pk": 9,
+    "fields": {
+        "first_name": "Bob",
+        "last_name": "Weir",
+        "date_created": "2007-10-21"
+    }
+},
+{
+    "model": "api.customer",
+    "pk": 10,
+    "fields": {
+        "first_name": "Phil",
+        "last_name": "Lesh",
+        "date_created": "1971-09-05"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 1,
+    "fields": {
+        "Price": "10.00",
+        "Title": "Basketball",
+        "Description": "Orange with black lines.  Space Jam Logo.",
+        "ProductType": 1,
+        "Customer": 1
+    }
+},
+{
+    "model": "api.product",
+    "pk": 2,
+    "fields": {
+        "Price": "12.00",
+        "Title": "Hot Wheelz",
+        "Description": "5 pack of cars",
+        "ProductType": 2,
+        "Customer": 2
+    }
+},
+{
+    "model": "api.product",
+    "pk": 3,
+    "fields": {
+        "Price": "1000.00",
+        "Title": "TV",
+        "Description": "HD 4k with surround sound.",
+        "ProductType": 4,
+        "Customer": 3
+    }
+},
+{
+    "model": "api.product",
+    "pk": 4,
+    "fields": {
+        "Price": "30.00",
+        "Title": "Hoodie",
+        "Description": "Black hoodie with graphic logo.",
+        "ProductType": 5,
+        "Customer": 4
+    }
+},
+{
+    "model": "api.product",
+    "pk": 5,
+    "fields": {
+        "Price": "26000.00",
+        "Title": "Ford F150",
+        "Description": "Red pick-up truck.  We're in the south.",
+        "ProductType": 6,
+        "Customer": 5
+    }
+},
+{
+    "model": "api.product",
+    "pk": 6,
+    "fields": {
+        "Price": "55555.00",
+        "Title": "Mona Lisa",
+        "Description": "She looks salty, but is in mint condition.",
+        "ProductType": 7,
+        "Customer": 6
+    }
+},
+{
+    "model": "api.product",
+    "pk": 7,
+    "fields": {
+        "Price": "10.00",
+        "Title": "Salad",
+        "Description": "Wilted and wet.",
+        "ProductType": 8,
+        "Customer": 7
+    }
+},
+{
+    "model": "api.product",
+    "pk": 8,
+    "fields": {
+        "Price": "600.00",
+        "Title": "Couch",
+        "Description": "Sectional Couch",
+        "ProductType": 9,
+        "Customer": 8
+    }
+},
+{
+    "model": "api.product",
+    "pk": 9,
+    "fields": {
+        "Price": "80.00",
+        "Title": "Tent",
+        "Description": "2 person tent for cold weather.",
+        "ProductType": 10,
+        "Customer": 9
+    }
+},
+{
+    "model": "api.product",
+    "pk": 10,
+    "fields": {
+        "Price": "5.00",
+        "Title": "Brave New World",
+        "Description": "Classic by Aldous Huxley.",
+        "ProductType": 11,
+        "Customer": 10
+    }
+},
+{
+    "model": "api.order",
+    "pk": 1,
+    "fields": {
+        "PaymentTypeID": "0",
+        "OrderDate": "2017-01-23",
+        "CustomerID": 1
+    }
+},
+{
+    "model": "api.order",
+    "pk": 2,
+    "fields": {
+        "PaymentTypeID": "0",
+        "OrderDate": "2017-01-24",
+        "CustomerID": 2
+    }
+},
+{
+    "model": "api.order",
+    "pk": 3,
+    "fields": {
+        "PaymentTypeID": "0",
+        "OrderDate": "2017-02-24",
+        "CustomerID": 3
+    }
+},
+{
+    "model": "api.order",
+    "pk": 4,
+    "fields": {
+        "PaymentTypeID": "0",
+        "OrderDate": "2017-03-24",
+        "CustomerID": 4
+    }
+},
+{
+    "model": "api.order",
+    "pk": 5,
+    "fields": {
+        "PaymentTypeID": "0",
+        "OrderDate": "2017-04-24",
+        "CustomerID": 5
+    }
+},
+{
+    "model": "api.order",
+    "pk": 6,
+    "fields": {
+        "PaymentTypeID": "0",
+        "OrderDate": "2017-04-05",
+        "CustomerID": 6
+    }
+},
+{
+    "model": "api.order",
+    "pk": 7,
+    "fields": {
+        "PaymentTypeID": "0",
+        "OrderDate": "2017-05-05",
+        "CustomerID": 7
+    }
+},
+{
+    "model": "api.order",
+    "pk": 8,
+    "fields": {
+        "PaymentTypeID": "0",
+        "OrderDate": "2017-05-21",
+        "CustomerID": 8
+    }
+},
+{
+    "model": "api.order",
+    "pk": 9,
+    "fields": {
+        "PaymentTypeID": "0",
+        "OrderDate": "2017-04-21",
+        "CustomerID": 9
+    }
+},
+{
+    "model": "api.order",
+    "pk": 10,
+    "fields": {
+        "PaymentTypeID": "0",
+        "OrderDate": "2017-02-05",
+        "CustomerID": 10
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 1,
+    "fields": {
+        "accountLabel": "Will's VISA",
+        "accountType": "VISA",
+        "accountNumber": "1234123412341234",
+        "CustomerID": 1
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 2,
+    "fields": {
+        "accountLabel": "Blaise's Mastercard",
+        "accountType": "Mastercard",
+        "accountNumber": "1234123412341234",
+        "CustomerID": 2
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 3,
+    "fields": {
+        "accountLabel": "Zak's American Exp",
+        "accountType": "American Express",
+        "accountNumber": "1234123412341234",
+        "CustomerID": 4
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 4,
+    "fields": {
+        "accountLabel": "Jeremy's Discover",
+        "accountType": "Discover",
+        "accountNumber": "1234123412341234",
+        "CustomerID": 3
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 5,
+    "fields": {
+        "accountLabel": "Adam's VISA",
+        "accountType": "Visa",
+        "accountNumber": "1234123412341234",
+        "CustomerID": 5
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 6,
+    "fields": {
+        "accountLabel": "Jane's VISA",
+        "accountType": "Visa",
+        "accountNumber": "1234123412341234",
+        "CustomerID": 6
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 7,
+    "fields": {
+        "accountLabel": "Primary VISA",
+        "accountType": "Visa",
+        "accountNumber": "1234123412341234",
+        "CustomerID": 7
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 8,
+    "fields": {
+        "accountLabel": "Secondary VISA",
+        "accountType": "Visa",
+        "accountNumber": "1234123412341235",
+        "CustomerID": 7
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 9,
+    "fields": {
+        "accountLabel": "Primary VISA",
+        "accountType": "Visa",
+        "accountNumber": "1234123412341235",
+        "CustomerID": 8
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 10,
+    "fields": {
+        "accountLabel": "Primary VISA",
+        "accountType": "Visa",
+        "accountNumber": "1234123412341235",
+        "CustomerID": 9
+    }
+},
+{
+    "model": "api.paymenttype",
+    "pk": 11,
+    "fields": {
+        "accountLabel": "Primary VISA",
+        "accountType": "Visa",
+        "accountNumber": "1234123412341235",
+        "CustomerID": 10
+    }
+}
+]
