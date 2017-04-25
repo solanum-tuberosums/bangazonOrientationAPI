@@ -70,6 +70,13 @@
     }
 },
 {
+    "model": "api.producttype",
+    "pk": 12,
+    "fields": {
+        "label": "chimichanga"
+    }
+},
+{
     "model": "api.customer",
     "pk": 1,
     "fields": {
@@ -360,6 +367,106 @@
     }
 },
 {
+    "model": "api.trainingprogram",
+    "pk": 1,
+    "fields": {
+        "Name": "Learning Guitar 101",
+        "StartDate": "2017-04-20",
+        "EndDate": "0002-01-01",
+        "MaxEnrollment": 3
+    }
+},
+{
+    "model": "api.trainingprogram",
+    "pk": 2,
+    "fields": {
+        "Name": "How to Treat Raw Sewage",
+        "StartDate": "2017-04-01",
+        "EndDate": "0002-03-13",
+        "MaxEnrollment": 9000000
+    }
+},
+{
+    "model": "api.trainingprogram",
+    "pk": 3,
+    "fields": {
+        "Name": "How to tell dad jokes",
+        "StartDate": "2017-04-01",
+        "EndDate": "2018-03-13",
+        "MaxEnrollment": 1
+    }
+},
+{
+    "model": "api.trainingprogram",
+    "pk": 4,
+    "fields": {
+        "Name": "How to Grow your Little Rubber Chicken",
+        "StartDate": "2017-04-01",
+        "EndDate": "2018-03-13",
+        "MaxEnrollment": 5
+    }
+},
+{
+    "model": "api.trainingprogram",
+    "pk": 5,
+    "fields": {
+        "Name": "Falling on your face for dummies",
+        "StartDate": "2018-04-01",
+        "EndDate": "9999-03-13",
+        "MaxEnrollment": 26
+    }
+},
+{
+    "model": "api.trainingprogram",
+    "pk": 6,
+    "fields": {
+        "Name": "How Not To Write Code",
+        "StartDate": "2018-02-01",
+        "EndDate": "2020-12-01",
+        "MaxEnrollment": 941
+    }
+},
+{
+    "model": "api.trainingprogram",
+    "pk": 7,
+    "fields": {
+        "Name": "How To Slowly Be Creative",
+        "StartDate": "2017-04-25",
+        "EndDate": "2050-01-01",
+        "MaxEnrollment": 2
+    }
+},
+{
+    "model": "api.trainingprogram",
+    "pk": 8,
+    "fields": {
+        "Name": "Creating Dummy Data for Dummies",
+        "StartDate": "2017-04-25",
+        "EndDate": "2017-04-26",
+        "MaxEnrollment": 2
+    }
+},
+{
+    "model": "api.trainingprogram",
+    "pk": 9,
+    "fields": {
+        "Name": "Creating Smarty Data for Smarties",
+        "StartDate": "2017-04-26",
+        "EndDate": "9999-04-27",
+        "MaxEnrollment": 5
+    }
+},
+{
+    "model": "api.trainingprogram",
+    "pk": 10,
+    "fields": {
+        "Name": "How to ride your kite without hands",
+        "StartDate": "2017-04-01",
+        "EndDate": "2500-01-20",
+        "MaxEnrollment": 1
+    }
+},
+{
     "model": "api.paymenttype",
     "pk": 1,
     "fields": {
@@ -467,6 +574,326 @@
         "accountType": "Visa",
         "accountNumber": "1234123412341235",
         "CustomerID": 10
+    }
+},
+{
+    "model": "api.department",
+    "pk": 1,
+    "fields": {
+        "name": "Raw Sewage",
+        "budget": "900000000.00"
+    }
+},
+{
+    "model": "api.department",
+    "pk": 2,
+    "fields": {
+        "name": "Tempered Sewage",
+        "budget": "990000000.00"
+    }
+},
+{
+    "model": "api.department",
+    "pk": 3,
+    "fields": {
+        "name": "Juliet's Fine Dining",
+        "budget": "72934577.93"
+    }
+},
+{
+    "model": "api.department",
+    "pk": 4,
+    "fields": {
+        "name": "Hilbert's Washing District",
+        "budget": "72934577.93"
+    }
+},
+{
+    "model": "api.department",
+    "pk": 5,
+    "fields": {
+        "name": "Adminstration",
+        "budget": "1007.93"
+    }
+},
+{
+    "model": "api.department",
+    "pk": 6,
+    "fields": {
+        "name": "Brenda's Code-Along",
+        "budget": "0.56"
+    }
+},
+{
+    "model": "api.department",
+    "pk": 7,
+    "fields": {
+        "name": "Dentistry",
+        "budget": "9600.45"
+    }
+},
+{
+    "model": "api.department",
+    "pk": 8,
+    "fields": {
+        "name": "Joke",
+        "budget": "0.01"
+    }
+},
+{
+    "model": "api.department",
+    "pk": 9,
+    "fields": {
+        "name": "Headless Rubber Chickens",
+        "budget": "5.05"
+    }
+},
+{
+    "model": "api.department",
+    "pk": 10,
+    "fields": {
+        "name": "Martian Resources",
+        "budget": "9999999999.23"
+    }
+},
+{
+    "model": "api.computer",
+    "pk": 1,
+    "fields": {
+        "date_purchased": "1999-01-02",
+        "date_decommissioned": "2000-01-02"
+    }
+},
+{
+    "model": "api.computer",
+    "pk": 2,
+    "fields": {
+        "date_purchased": "1999-02-02",
+        "date_decommissioned": "2000-02-02"
+    }
+},
+{
+    "model": "api.computer",
+    "pk": 3,
+    "fields": {
+        "date_purchased": "1999-03-02",
+        "date_decommissioned": "2000-04-02"
+    }
+},
+{
+    "model": "api.computer",
+    "pk": 4,
+    "fields": {
+        "date_purchased": "0511-04-04",
+        "date_decommissioned": "0611-06-08"
+    }
+},
+{
+    "model": "api.computer",
+    "pk": 5,
+    "fields": {
+        "date_purchased": "0999-04-04",
+        "date_decommissioned": "1999-06-08"
+    }
+},
+{
+    "model": "api.computer",
+    "pk": 6,
+    "fields": {
+        "date_purchased": "1555-04-04",
+        "date_decommissioned": "1607-06-08"
+    }
+},
+{
+    "model": "api.computer",
+    "pk": 7,
+    "fields": {
+        "date_purchased": "7530-08-06",
+        "date_decommissioned": "1607-06-08"
+    }
+},
+{
+    "model": "api.computer",
+    "pk": 8,
+    "fields": {
+        "date_purchased": "1999-08-06",
+        "date_decommissioned": "2001-06-08"
+    }
+},
+{
+    "model": "api.computer",
+    "pk": 9,
+    "fields": {
+        "date_purchased": "0003-03-03",
+        "date_decommissioned": "0004-04-04"
+    }
+},
+{
+    "model": "api.computer",
+    "pk": 10,
+    "fields": {
+        "date_purchased": "1999-09-09",
+        "date_decommissioned": "2555-10-10"
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 1,
+    "fields": {
+        "FirstName": "Juan",
+        "LastName": "Swan",
+        "IsSupervisor": 1,
+        "DepartmentID": 1
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 2,
+    "fields": {
+        "FirstName": "Juan",
+        "LastName": "Frond",
+        "IsSupervisor": 0,
+        "DepartmentID": 1
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 3,
+    "fields": {
+        "FirstName": "Emily",
+        "LastName": "Dickenson",
+        "IsSupervisor": 0,
+        "DepartmentID": 3
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 4,
+    "fields": {
+        "FirstName": "Leonardo",
+        "LastName": "The Turtle",
+        "IsSupervisor": 0,
+        "DepartmentID": 10
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 5,
+    "fields": {
+        "FirstName": "Donatello",
+        "LastName": "The Turtle",
+        "IsSupervisor": 0,
+        "DepartmentID": 10
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 6,
+    "fields": {
+        "FirstName": "Michaelangelo",
+        "LastName": "The Turtle",
+        "IsSupervisor": 0,
+        "DepartmentID": 10
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 7,
+    "fields": {
+        "FirstName": "Raphael",
+        "LastName": "The Turtle",
+        "IsSupervisor": 0,
+        "DepartmentID": 10
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 8,
+    "fields": {
+        "FirstName": "Splinter",
+        "LastName": "The Rat",
+        "IsSupervisor": 1,
+        "DepartmentID": 10
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 9,
+    "fields": {
+        "FirstName": "Francis",
+        "LastName": "Meyer",
+        "IsSupervisor": 0,
+        "DepartmentID": 1
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 10,
+    "fields": {
+        "FirstName": "Gina",
+        "LastName": "McMeana",
+        "IsSupervisor": 1,
+        "DepartmentID": 2
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 11,
+    "fields": {
+        "FirstName": "Jimminy",
+        "LastName": "Cricket",
+        "IsSupervisor": 1,
+        "DepartmentID": 3
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 12,
+    "fields": {
+        "FirstName": "Ebenezer",
+        "LastName": "Scrooger",
+        "IsSupervisor": 1,
+        "DepartmentID": 4
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 13,
+    "fields": {
+        "FirstName": "Joe",
+        "LastName": "Cool",
+        "IsSupervisor": 1,
+        "DepartmentID": 5
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 14,
+    "fields": {
+        "FirstName": "Mr.",
+        "LastName": "Gobblesworth",
+        "IsSupervisor": 1,
+        "DepartmentID": 7
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 15,
+    "fields": {
+        "FirstName": "Steve",
+        "LastName": "Brownlee",
+        "IsSupervisor": 1,
+        "DepartmentID": 8
+    }
+},
+{
+    "model": "api.employee",
+    "pk": 16,
+    "fields": {
+        "FirstName": "Steve",
+        "LastName": "Brownlee",
+        "IsSupervisor": 1,
+        "DepartmentID": 9
     }
 }
 ]
