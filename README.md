@@ -63,8 +63,7 @@ pip install djangorestframework
     cd bangazon
     python manage.py makemigrations
     python manage.py migrate
-    python manage.py loaddata customerdata.json
-    python manage.py loaddata employeedata.json
+    python manage.py loaddata alldata
     python manage.py runserver
     ```
 1. View in your borwser by going to [localhost:8000](http://localhost:8000/)
