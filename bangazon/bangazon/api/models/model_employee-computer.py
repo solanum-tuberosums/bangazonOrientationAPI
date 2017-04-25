@@ -1,5 +1,5 @@
 """
-bangazon api model configuration for employee-computer joining tables
+bangazon api model configuration for the employee-computer joining table
 """
 
 from django.db import models

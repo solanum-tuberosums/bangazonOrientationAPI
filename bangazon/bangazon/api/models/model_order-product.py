@@ -1,5 +1,5 @@
 """
-bangazon api model configuration for order-product
+bangazon api model configuration for the order-product joining table
 """
 
 from django.db import models
@@ -9,7 +9,7 @@ from bangazon.api.models import *
 class OrderProduct(models.Model):
 
 	"""
-	This class models the relationship between the Order and Product resources in the API's database.  
+	This class models the relationship between the Order and Product resources in the API's database.
 
 	----Fields----
 	product_id(foreign key): Links to Product(ProductID) with a foreign key
