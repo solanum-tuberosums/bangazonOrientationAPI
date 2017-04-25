@@ -1,6 +1,9 @@
 from bangazon.api.serializers.serializer_customer import CustomerSerializer
 from bangazon.api.serializers.serializer_product import ProductSerializer
 from bangazon.api.serializers.serializer_product_type import ProductTypeSerializer
-
-__all__ = ['CustomerSerializer', 'ProductSerializer',
-           'ProductTypeSerializer']
+from bangazon.api.serializers.serializer_order import OrderSerializer
+from bangazon.api.serializers.serializer_training_program import TrainingProgramSerializer
+from bangazon.api.serializers.serializer_payment_type import PaymentTypeSerializer
+from bangazon.api.serializers.serializer_department import DepartmentSerializer
+from bangazon.api.serializers.serializer_computer import ComputerSerializer
+from bangazon.api.serializers.serializer_employee import EmployeeSerializer

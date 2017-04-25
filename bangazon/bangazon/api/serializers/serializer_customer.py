@@ -1,11 +1,14 @@
+"""
+bangazon api serializer configuration for customer
+"""
+
 from rest_framework import serializers
-from bangazon.api.models.model_customer import Customer
+from bangazon.api.models import *
 
 
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
-
     """
-    This class converts the customer model into native Python datatypes.
+    This class converts the customer model database table into Python data types.
 
     We exclude no fields.
 

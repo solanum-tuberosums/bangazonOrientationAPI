@@ -1,3 +1,7 @@
+"""
+bangazon api model configuration for customer
+"""
+
 from django.db import models
 
 
@@ -6,8 +10,8 @@ class Customer(models.Model):
     This class models a customer in the API's database.
 
     ----Fields----
-    first_name(string): the first name of a customer
-    last_name(string): the last name of a customer
+    first_name(character): the first name of a customer
+    last_name(character): the last name of a customer
     date_created(date): the date a user was added to the database
 
     Author: Zak Spence
@@ -19,4 +23,3 @@ class Customer(models.Model):
 
     def __str__(self):
         return "{} {}".format(self.first_name, self.last_name)
-

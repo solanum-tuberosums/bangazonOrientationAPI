@@ -1,18 +1,17 @@
 """
-bangazon api serializer Configuration for product type
+bangazon api serializer configuration for product type
 """
 
 from rest_framework import serializers
-from bangazon.api.models.model_product_type import ProductType
+from bangazon.api.models import *
 
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
-    This class converts database tables into Python data types
+    This class converts the product type database table into Python data types
 
     We exclude no fields.
 
-    Author:
-        Adam Myers
+    Author: Adam Myers
     """
     class Meta:
         model = ProductType

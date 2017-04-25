@@ -1,11 +1,14 @@
+"""
+bangazon api serializer configuration for department
+"""
+
 from rest_framework import serializers
-from bangazon.api.models.model_department import Department
+from bangazon.api.models import *
 
 
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
-
     """
-    This class converts the department model into native Python datatypes.
+    This class converts the department model database table into Python data types.
 
     We exclude no fields.
 
