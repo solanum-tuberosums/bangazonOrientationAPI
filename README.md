@@ -21,7 +21,7 @@ An open API for Bangazon, a fictitious company of Nashville Software School, bui
     - Budget
     - Name
 1. Computer
-    - Title
+    - Serial Number
     - Purchase Date
     - Decommission Date
 1. Training Program
@@ -44,7 +44,7 @@ An open API for Bangazon, a fictitious company of Nashville Software School, bui
 
 
 ## Requirements/Dependencies
-### Install Python Python
+### Install Python
 [Python 3.6.0](https://wiki.python.org/moin/BeginnersGuide/Download) (click for instructions for installing)
 
 ### Install Django and Django REST framework
@@ -58,7 +58,7 @@ pip install djangorestframework
     ```
     git clone https://github.com/solanum-tuberosums/bangazonOrientationAPI.git
     ```
-1. Set up Data Base
+1. Set up Database
     ```
     cd bangazon
     python manage.py makemigrations
