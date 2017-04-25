@@ -12,4 +12,4 @@ class Computer(models.Model):
     Author: Zak Spence
     """
     date_purchased = models.DateField()
-    date_decommissioned = models.DateField()
+    date_decommissioned = models.DateField(blank=True, null=True)
