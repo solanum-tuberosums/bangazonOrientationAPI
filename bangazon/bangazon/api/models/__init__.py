@@ -7,3 +7,6 @@ from bangazon.api.models.model_payment_type import PaymentType
 from bangazon.api.models.model_department import Department
 from bangazon.api.models.model_computer import Computer
 from bangazon.api.models.model_employee import Employee
+from bangazon.api.models.model_employee_computer import EmployeeComputer
+from bangazon.api.models.model_employee_training import EmployeeTraining
+from bangazon.api.models.model_order_product import OrderProduct

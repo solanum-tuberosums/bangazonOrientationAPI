@@ -12,16 +12,13 @@ class EmployeeComputer(models.Model):
     resources in the API's database.
 
     ----Fields----
-    name(character): the name of the department
-    budget(decimal): the budget of the department
+    date_assigned(date): the date the department was assigned
+    employee_id(foreign key): the employee to whom the computer was assigned to
+    computer_id(foreign key): the computer being assigned
 
-    Author: Jeremy Bakker
+    Author: Zak Spence
     """
 
     date_assigned = models.DateField()
     employee_id = models.ForeignKey(Employee)
     computer_id = models.ForeignKey(Computer)
-
-
-    def __str__(self):
-        return self.name
