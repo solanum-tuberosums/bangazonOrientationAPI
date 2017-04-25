@@ -3,7 +3,7 @@ bangazon api serializer configuration for computer
 """
 
 from rest_framework import serializers
-from bangazon.api.models.model_computer import *
+from bangazon.api.models import *
 
 
 class ComputerSerializer(serializers.HyperlinkedModelSerializer):
@@ -18,4 +18,3 @@ class ComputerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Computer
         exclude = ()
-

@@ -3,8 +3,9 @@ bangazon api view configuration for training program
 """
 
 from rest_framework import viewsets
-from bangazon.api.serializers.serializer_training_program import *
-from bangazon.api.models.model_training_program import *
+from bangazon.api.serializers import *
+from bangazon.api.models import *
+
 
 class TrainingProgramViewSet(viewsets.ModelViewSet):
     """

@@ -3,7 +3,7 @@ bangazon api model configuration for order
 """
 
 from django.db import models
-from bangazon.api.models.model_customer import Customer
+from bangazon.api.models import *
 
 
 class Order(models.Model):
@@ -19,6 +19,6 @@ class Order(models.Model):
 	Author: Jeremy Bakker
 	"""
 
-	payment_type_id = models.DecimalField(max_digits = 20, decimal_places = 0)
+	payment_type_id = models.DecimalField(max_digits=20, decimal_places=0, blank=True, null=True)
 	order_date = models.DateField()
 	customer_id = models.ForeignKey(Customer)

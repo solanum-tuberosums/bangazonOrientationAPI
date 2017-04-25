@@ -3,7 +3,7 @@ bangazon api serializer configuration for customer
 """
 
 from rest_framework import serializers
-from bangazon.api.models.model_customer import Customer
+from bangazon.api.models import *
 
 
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):

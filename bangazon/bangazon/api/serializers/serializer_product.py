@@ -3,7 +3,7 @@ bangazon api serializer configuration for product
 """
 
 from rest_framework import serializers
-from bangazon.api.models.model_product import Product
+from bangazon.api.models import *
 
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -17,7 +17,3 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Product
         exclude = ()
-
-
-
-

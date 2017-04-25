@@ -3,7 +3,7 @@ bangazon api serializer configuration for product type
 """
 
 from rest_framework import serializers
-from bangazon.api.models.model_product_type import ProductType
+from bangazon.api.models import *
 
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
     """

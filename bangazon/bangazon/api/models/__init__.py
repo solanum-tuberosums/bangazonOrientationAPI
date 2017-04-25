@@ -1,6 +1,6 @@
 from bangazon.api.models.model_customer import Customer
-from bangazon.api.models.model_product import Product
 from bangazon.api.models.model_product_type import ProductType
+from bangazon.api.models.model_product import Product
 from bangazon.api.models.model_order import Order
 from bangazon.api.models.model_training_program import TrainingProgram
 from bangazon.api.models.model_payment_type import PaymentType

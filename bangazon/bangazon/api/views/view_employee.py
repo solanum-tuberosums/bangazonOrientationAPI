@@ -3,8 +3,8 @@ bangazon api view configuration for employee
 """
 
 from rest_framework import viewsets
-from bangazon.api.serializers.serializer_employee import *
-from bangazon.api.models.model_employee import *
+from bangazon.api.serializers import *
+from bangazon.api.models import *
 
 
 class EmployeeViewSet(viewsets.ModelViewSet):

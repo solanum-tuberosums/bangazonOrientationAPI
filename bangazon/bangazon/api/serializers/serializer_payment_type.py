@@ -3,7 +3,7 @@ bangazon api serializer configuration for payment type
 """
 
 from rest_framework import serializers
-from bangazon.api.models.model_payment_type import PaymentType
+from bangazon.api.models import *
 
 
 class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):

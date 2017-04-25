@@ -3,7 +3,7 @@ bangazon api model configuration for payment type
 """
 
 from django.db import models
-from bangazon.api.models.model_customer import Customer
+from bangazon.api.models import *
 
 
 class PaymentType(models.Model):

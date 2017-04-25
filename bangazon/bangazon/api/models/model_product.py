@@ -14,8 +14,8 @@ class Product(models.Model):
     price(decimal: price of an individual product
     title(character): the name/title of the product
     description(text): description of the product
-    product_type(foreign key): id of the type category that the product belongs to
-    customer(foreign key): id of the customer who created/posted the product
+    product_type(foreign key): links to ProductType(ProductTypeID) with a foregin key
+    customer(foreign key): links to Customer(CustomerId) with a foreign key
 
     Author: Will Sims
     """

@@ -3,8 +3,8 @@ bangazon api view configuration for computer
 """
 
 from rest_framework import viewsets
-from bangazon.api.serializers.serializer_computer import ComputerSerializer
-from bangazon.api.models.model_computer import Computer
+from bangazon.api.serializers import *
+from bangazon.api.models import *
 
 
 class ComputerViewSet(viewsets.ModelViewSet):

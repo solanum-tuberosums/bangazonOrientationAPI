@@ -4,6 +4,7 @@ bangazon api model configuration for training program
 
 from django.db import models
 
+
 class TrainingProgram(models.Model):
     """
     This class models a training program in the API's database. 

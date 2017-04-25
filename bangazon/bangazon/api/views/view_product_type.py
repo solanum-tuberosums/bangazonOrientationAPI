@@ -3,8 +3,8 @@ bangazon api view configuration for product type
 """
 
 from rest_framework import viewsets
-from bangazon.api.serializers.serializer_product_type import ProductTypeSerializer
-from bangazon.api.models.model_product_type import ProductType
+from bangazon.api.serializers import *
+from bangazon.api.models import *
 
 
 class ProductTypeViewSet(viewsets.ModelViewSet):

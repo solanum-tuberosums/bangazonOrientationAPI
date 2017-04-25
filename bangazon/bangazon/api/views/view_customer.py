@@ -3,8 +3,8 @@ bangazon api view configuration for customer
 """
 
 from rest_framework import viewsets
-from bangazon.api.serializers import serializer_customer
-from bangazon.api.models import model_customer
+from bangazon.api.serializers import *
+from bangazon.api.models import *
 
 
 class CustomerViewSet(viewsets.ModelViewSet):

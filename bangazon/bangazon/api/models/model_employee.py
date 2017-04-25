@@ -3,7 +3,7 @@ bangazon api model configuration for employee
 """
 
 from django.db import models
-from bangazon.api.models.model_department import Department
+from bangazon.api.models import *
 
 
 class Employee(models.Model):

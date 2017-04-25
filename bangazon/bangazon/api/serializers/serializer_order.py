@@ -3,7 +3,7 @@ bangazon api serializer configuration for order
 """
 
 from rest_framework import serializers
-from bangazon.api.models.model_order import *
+from bangazon.api.models import *
 
 
 class OrderSerializer(serializers.HyperlinkedModelSerializer):
