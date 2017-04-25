@@ -1,79 +1,79 @@
 [
-{
-    "model": "api.producttype",
-    "pk": 1,
-    "fields": {
-        "label": "Sports"
+    {
+        "model": "api.producttype",
+        "pk": 1,
+        "fields": {
+            "label": "Sports"
+        }
+    },
+    {
+        "model": "api.producttype",
+        "pk": 2,
+        "fields": {
+            "label": "Toys"
+        }
+    },
+    {
+        "model": "api.producttype",
+        "pk": 4,
+        "fields": {
+            "label": "Electronics"
+        }
+    },
+    {
+        "model": "api.producttype",
+        "pk": 5,
+        "fields": {
+            "label": "Clothes"
+        }
+    },
+    {
+        "model": "api.producttype",
+        "pk": 6,
+        "fields": {
+            "label": "Automotive"
+        }
+    },
+    {
+        "model": "api.producttype",
+        "pk": 7,
+        "fields": {
+            "label": "Art"
+        }
+    },
+    {
+        "model": "api.producttype",
+        "pk": 8,
+        "fields": {
+            "label": "Food"
+        }
+    },
+    {
+        "model": "api.producttype",
+        "pk": 9,
+        "fields": {
+            "label": "Furniture"
+        }
+    },
+    {
+        "model": "api.producttype",
+        "pk": 10,
+        "fields": {
+            "label": "Outdoors"
+        }
+    },
+    {
+        "model": "api.producttype",
+        "pk": 11,
+        "fields": {
+            "label": "Books"
+        }
+    },
+    {
+        "model": "api.producttype",
+        "pk": 12,
+        "fields": {
+            "label": "chimichanga"
+        }
     }
-},
-{
-    "model": "api.producttype",
-    "pk": 2,
-    "fields": {
-        "label": "Toys"
-    }
-},
-{
-    "model": "api.producttype",
-    "pk": 4,
-    "fields": {
-        "label": "Electronics"
-    }
-},
-{
-    "model": "api.producttype",
-    "pk": 5,
-    "fields": {
-        "label": "Clothes"
-    }
-},
-{
-    "model": "api.producttype",
-    "pk": 6,
-    "fields": {
-        "label": "Automotive"
-    }
-},
-{
-    "model": "api.producttype",
-    "pk": 7,
-    "fields": {
-        "label": "Art"
-    }
-},
-{
-    "model": "api.producttype",
-    "pk": 8,
-    "fields": {
-        "label": "Food"
-    }
-},
-{
-    "model": "api.producttype",
-    "pk": 9,
-    "fields": {
-        "label": "Furniture"
-    }
-},
-{
-    "model": "api.producttype",
-    "pk": 10,
-    "fields": {
-        "label": "Outdoors"
-    }
-},
-{
-    "model": "api.producttype",
-    "pk": 11,
-    "fields": {
-        "label": "Books"
-    }
-},
-{
-    "model": "api.producttype",
-    "pk": 12,
-    "fields": {
-        "label": "chimichanga"
-    }
-}
 ]
