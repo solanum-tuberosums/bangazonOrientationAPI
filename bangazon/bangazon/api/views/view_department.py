@@ -10,9 +10,10 @@ from bangazon.api.models.model_department import *
 
 class DepartmentViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows ALL orders to be viewed or edited.
+    API endpoint that allows order data to be viewed or edited
 
     Author: Jeremy Bakker
     """
+
     queryset = Department.objects.all()
     serializer_class = DepartmentSerializer

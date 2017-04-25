@@ -1,24 +1,21 @@
 """
-bangazon api model Configuration for product type
+bangazon api model configuration for product type
 """
 
 from django.db import models
 
+
 class ProductType(models.Model):
-    '''This class represents a product type that defines one data fields. 
+    """
+    This class models a product type in the API's database. 
 
-    Data Fields:
-        label [Refers to the name of the product type.]
+    ----Fields---- 
+    label(character): the name of the product type
 
-    Author:
-        Adam Myers
-    '''
+    Author: Adam Myers
+    """
+    
     label = models.CharField(max_length=50)
 
     def __str__(self):
-        """ Retrieves the value of label
-
-        Arguments:
-            n/a
-        """
         return self.label

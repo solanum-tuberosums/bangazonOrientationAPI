@@ -1,3 +1,7 @@
+"""
+bangazon api model configuration for department
+"""
+
 from django.db import models
 
 
@@ -6,7 +10,7 @@ class Department(models.Model):
     This class models a department in the API's database.
 
     ----Fields----
-    name(string): the name of the department
+    name(character): the name of the department
     budget(decimal): the budget of the department
 
     Author: Jeremy Bakker

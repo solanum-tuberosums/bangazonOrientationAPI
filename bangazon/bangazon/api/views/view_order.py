@@ -11,9 +11,10 @@ from bangazon.api.models import model_customer
 
 class OrderViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows ALL orders to be viewed or edited.
+    API endpoint that allows order data to be viewed or edited.
 
     Author: Jeremy Bakker
     """
+    
     queryset = Order.objects.all()
     serializer_class = OrderSerializer

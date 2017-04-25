@@ -1,26 +1,28 @@
 """
 bangazon api model configuration for payment type
 """
+
 from django.db import models
 from bangazon.api.models.model_customer import Customer
 
-# Create your models here.
-class PaymentType(models.Model):
-	'''This class represents our payment type resource defines 4 data fields.
 
-	DataFields:
-		accountLabel
-		accountType
-		accountNumber
-		customerID [Links to Customer(CustomerID) with a foregin key]
+class PaymentType(models.Model):
+	"""
+	This class models a payment type in the API's database. 
+
+    ----Fields---- 
+	account_label(character): name of payment 
+	account_type(character): type of payment
+	account_number(decimal): account number
+	customer_id(foreign key): links to Customer(CustomerID) with a foregin key
 
 	Author: Blaise Roberts	
-	'''
-	accountLabel = models.CharField(max_length=20)
-	accountType = models.CharField(max_length=20)
-	accountNumber = models.DecimalField(max_digits=20, decimal_places=0)
-	CustomerID = models.ForeignKey(Customer, on_delete=models.CASCADE)
+	"""
+	
+	account_label = models.CharField(max_length=20)
+	account_type = models.CharField(max_length=20)
+	account_number = models.DecimalField(max_digits=20, decimal_places=0)
+	customer_id = models.ForeignKey(Customer, on_delete=models.CASCADE)
 
 	def __str__(self):
-		return self.accountLabel
-	
+		return self.account_label	

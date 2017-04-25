@@ -1,5 +1,5 @@
 """
-bangazon api view Configuration for training program
+bangazon api view configuration for training program
 """
 
 from rest_framework import viewsets
@@ -8,10 +8,10 @@ from bangazon.api.models.model_training_program import *
 
 class TrainingProgramViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to view all in training program table.
+    API endpoint that allows training program data to be viewed or edited
 
-    Author:
-        Adam Myers
+    Author: Adam Myers
     """
+    
     queryset = TrainingProgram.objects.all()
     serializer_class = TrainingProgramSerializer
