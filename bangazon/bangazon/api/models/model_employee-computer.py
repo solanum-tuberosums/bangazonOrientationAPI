@@ -20,7 +20,7 @@ class EmployeeComputer(models.Model):
 
     date_assigned = models.DateField()
     employee_id = models.ForeignKey(Employee)
-    computer_id = models.ForeignKey(Employee)
+    computer_id = models.ForeignKey(Computer)
 
 
     def __str__(self):
