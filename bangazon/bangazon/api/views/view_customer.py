@@ -14,5 +14,5 @@ class CustomerViewSet(viewsets.ModelViewSet):
     Author: Zak Spence
     """
 
-    queryset = model_customer.Customer.objects.all()
-    serializer_class = serializer_customer.CustomerSerializer
+    queryset = Customer.objects.all()
+    serializer_class = CustomerSerializer

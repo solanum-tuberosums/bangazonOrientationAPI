@@ -9,14 +9,12 @@
 .DS_Store
 /*.DS_Store
 *.DS_Store
-<<<<<<< HEAD
 
 bangazon/bangazon/api/migrations
 bangazon/bangazon/api/migrations
 =======
 [^\d+]_initial.py
 
->>>>>>> master
 
 ####################################
 ### AUTO-GENERATED IGNORED FILES ###

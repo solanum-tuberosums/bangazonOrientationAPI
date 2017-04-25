@@ -11,7 +11,7 @@ class Product(models.Model):
     This class models a product in the API's database. 
 
     ----Fields---- 
-    price(decimal: price of an individual product
+    price(decimal): price of an individual product
     title(character): the name/title of the product
     description(text): description of the product
     product_type(foreign key): links to ProductType(ProductTypeID) with a foregin key

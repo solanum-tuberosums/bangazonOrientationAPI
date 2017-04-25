@@ -8,7 +8,7 @@ from bangazon.api.models import *
 
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
     """
-    This class converts the department model database table into Python datatypes.
+    This class converts the department model database table into Python data types.
 
     We exclude no fields.
 

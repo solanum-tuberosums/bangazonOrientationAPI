@@ -11,8 +11,8 @@ class Employee(models.Model):
     This class models an employee in the API's database. 
 
     ----Fields---- 
-    first_name(character): the name of the employee
-    last_name(character): the name of the employee
+    first_name(character): the first name of the employee
+    last_name(character): the last name of the employee
     is_supervisor(integer): defies whether an employee is a supervisor (0 for False, 1 for True)
     department_id(foreign key): refers to the Department(DepartmentID) the employee is assigned to with a foreign key
 
