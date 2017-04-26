@@ -28,13 +28,4 @@ class Command(BaseCommand):
              """.format(migrations_deleted, db_deleted))
         else:
             db_deleted = "FALSE"
-            self.stdout.write("""
-             ------------------------------------------------------------------
-             -------------------   DATABASE DOESN'T EXIST   -------------------
-             --- --------------------------------------------------------------
-             ---                                                            ---
-             ---    The database does not exist so it cannot be deleted.    ---
-             ---                                                            ---
-             ------------------------------------------------------------------
-             ------------------------------------------------------------------
-             """.format(migrations_deleted, db_deleted))
+            self.stdout.write("\n \n      BANGAZON: Database already does not exist.\n ")
