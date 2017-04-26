@@ -1,0 +1,92 @@
+[
+    {
+        "model": "api.customer",
+        "pk": 1,
+        "fields": {
+            "first_name": "Will",
+            "last_name": "Sims",
+            "date_created": "1999-01-06"
+        }
+    },
+    {
+        "model": "api.customer",
+        "pk": 2,
+        "fields": {
+            "first_name": "Blaise",
+            "last_name": "Roberts",
+            "date_created": "2002-04-14"
+        }
+    },
+    {
+        "model": "api.customer",
+        "pk": 3,
+        "fields": {
+            "first_name": "Jeremy",
+            "last_name": "Bakker",
+            "date_created": "2011-08-10"
+        }
+    },
+    {
+        "model": "api.customer",
+        "pk": 4,
+        "fields": {
+            "first_name": "Zak",
+            "last_name": "Spence",
+            "date_created": "2003-07-16"
+        }
+    },
+    {
+        "model": "api.customer",
+        "pk": 5,
+        "fields": {
+            "first_name": "Adam",
+            "last_name": "Myers",
+            "date_created": "1997-10-25"
+        }
+    },
+    {
+        "model": "api.customer",
+        "pk": 6,
+        "fields": {
+            "first_name": "Jane",
+            "last_name": "Doe",
+            "date_created": "1981-02-04"
+        }
+    },
+    {
+        "model": "api.customer",
+        "pk": 7,
+        "fields": {
+            "first_name": "John",
+            "last_name": "Smith",
+            "date_created": "1999-05-31"
+        }
+    },
+    {
+        "model": "api.customer",
+        "pk": 8,
+        "fields": {
+            "first_name": "Jerry",
+            "last_name": "Garcia",
+            "date_created": "2008-10-20"
+        }
+    },
+    {
+        "model": "api.customer",
+        "pk": 9,
+        "fields": {
+            "first_name": "Bob",
+            "last_name": "Weir",
+            "date_created": "2007-10-21"
+        }
+    },
+    {
+        "model": "api.customer",
+        "pk": 10,
+        "fields": {
+            "first_name": "Phil",
+            "last_name": "Lesh",
+            "date_created": "1971-09-05"
+        }
+    }
+]
