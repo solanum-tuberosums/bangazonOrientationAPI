@@ -31,4 +31,3 @@ class Command(BaseCommand):
         os.system("python manage.py loaddata order_product")
         os.system("python manage.py loaddata employee_training")
         os.system("python manage.py loaddata employee_computer")
-
