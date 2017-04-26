@@ -61,9 +61,7 @@ pip install djangorestframework
 1. Set up Database
     ```
     cd bangazonOrientationAPI/bangazon/
-    python manage.py makemigrations api
-    python manage.py migrate
-    python manage.py loaddata alldata
+    python manage.py builddb
     python manage.py runserver
     ```
 1. View in your browser by going to [localhost:8000](http://localhost:8000/)
