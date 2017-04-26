@@ -16,4 +16,4 @@ class Command(BaseCommand):
         os.system("python manage.py loaddata payment_type")
         os.system("python manage.py loaddata product")
         os.system("python manage.py loaddata order")
-        self.stdout.write("Potato DB has been successfully loaded, bro!")
+        self.stdout.write("The database has been loaded successfully.")
