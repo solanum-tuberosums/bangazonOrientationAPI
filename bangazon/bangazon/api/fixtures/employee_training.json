@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "training_id": 1,
-            "employee_id": 1,
+            "employee_id": 1
         }
     },
     {
@@ -12,7 +12,7 @@
         "pk": 2,
         "fields": {
             "training_id": 2,
-            "employee_id": 2,
+            "employee_id": 2
         }
     },
     {
@@ -20,7 +20,7 @@
         "pk": 3,
         "fields": {
             "training_id": 1,
-            "employee_id": 3,
+            "employee_id": 3
         }
     },
     {
@@ -28,7 +28,7 @@
         "pk": 4,
         "fields": {
             "training_id": 4,
-            "employee_id": 4,
+            "employee_id": 4
         }
     },
     {
@@ -36,7 +36,7 @@
         "pk": 5,
         "fields": {
             "training_id": 10,
-            "employee_id": 5,
+            "employee_id": 5
         }
     },
     {
@@ -44,7 +44,7 @@
         "pk": 6,
         "fields": {
             "training_id": 3,
-            "employee_id": 6,
+            "employee_id": 6
         }
     },
     {
@@ -52,7 +52,7 @@
         "pk": 7,
         "fields": {
             "training_id": 3,
-            "employee_id": 7,
+            "employee_id": 7
         }
     },
     {
@@ -60,7 +60,7 @@
         "pk": 8,
         "fields": {
             "training_id": 10,
-            "employee_id": 8,
+            "employee_id": 8
         }
     },
     {
@@ -68,7 +68,7 @@
         "pk": 9,
         "fields": {
             "training_id": 9,
-            "employee_id": 6,
+            "employee_id": 6
         }
     },
     {
@@ -76,7 +76,7 @@
         "pk": 10,
         "fields": {
             "training_id": 4,
-            "employee_id": 1,
+            "employee_id": 1
         }
     }
 ]
