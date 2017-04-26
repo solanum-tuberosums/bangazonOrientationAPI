@@ -1,7 +1,19 @@
+"""
+bangazon api custom command to build database
+"""
+
 from django.core.management.base import BaseCommand, CommandError
 import os
 
+
 class Command(BaseCommand):
+    """
+    Defines what the 'builddb' command should do 
+    and what the '--help' option with display to the user.
+
+    Author: Blaise Roberts
+    """
+
     help = 'Builds and populates your database tables.'
 
     def handle(self, *args, **options):
