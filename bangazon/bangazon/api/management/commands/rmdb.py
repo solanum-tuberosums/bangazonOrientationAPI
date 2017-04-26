@@ -29,3 +29,4 @@ class Command(BaseCommand):
         else:
             db_deleted = "FALSE"
             self.stdout.write("\n \n      BANGAZON: Database already does not exist.\n ")
+
