@@ -25,14 +25,5 @@ class Command(BaseCommand):
 
         try:
             os.system("rm db.sqlite3")
-            self.stdout.write("""
-
-             -----------------  SUCCESS   -----------------
-
-             """.format(migrations_deleted, db_deleted))
         except:
-            db_deleted = "FALSE"
-            self.stdout.write("\n \n      BANGAZON: Database does not exist, so it could not be deleted.\n ")
-
-
-
+            pass
