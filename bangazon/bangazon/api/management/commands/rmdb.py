@@ -12,11 +12,9 @@ class Command(BaseCommand):
     Author: Will Sims
     """
 
-
     help = 'Deletes the local copies of the db.sqlite3 file and the bangazon/api/migrations/ directory.'
 
     def handle(self, *args, **options):
-        db_deleted = "FALSE"
 
         try:
             os.system("rm -rf bangazon/api/migrations/")
