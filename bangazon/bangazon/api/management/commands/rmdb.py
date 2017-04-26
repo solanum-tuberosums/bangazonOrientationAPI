@@ -20,23 +20,15 @@ class Command(BaseCommand):
 
         try:
             os.system("rm -rf bangazon/api/migrations/")
-            migrations_deleted = "TRUE "
         except:
-            migrations_deleted = "FALSE"
+            pass
 
         try:
             os.system("rm db.sqlite3")
-            db_deleted = "TRUE"
             self.stdout.write("""
-             ----------------------------------------------
+
              -----------------  SUCCESS   -----------------
-             --- ------------------------------------------
-             ---                                        ---
-             ---   - Migrations Deleted:        {}   ---
-             ---   - Database Deleted:          {}    ---
-             ---                                        ---
-             ----------------------------------------------
-             ----------------------------------------------
+
              """.format(migrations_deleted, db_deleted))
         except:
             db_deleted = "FALSE"
