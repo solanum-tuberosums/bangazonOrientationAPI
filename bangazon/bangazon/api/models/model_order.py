@@ -7,9 +7,8 @@ from bangazon.api.models import *
 
 
 class Order(models.Model):
-
 	"""
-	This class models an order in the API's database.  
+	This class models an order in the API's database.
 
 	----Fields----
 	payment_type_id(decimal): Refers to PaymentType(PaymentTypeID) without a foreign key

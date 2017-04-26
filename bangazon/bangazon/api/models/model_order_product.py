@@ -7,7 +7,6 @@ from bangazon.api.models import *
 
 
 class OrderProduct(models.Model):
-
 	"""
 	This class models the relationship between the Order and Product resources in the API's database.
 
