@@ -9,7 +9,7 @@ import os
 class Command(BaseCommand):
     """
     Defines what the 'builddb' command should do 
-    and what the '--help' option with display to the user.
+    and what the '--help' option will display to the user.
 
     Author: Blaise Roberts
     """
