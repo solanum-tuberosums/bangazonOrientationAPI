@@ -1,0 +1,110 @@
+[
+    {
+        "model": "api.employeecomputer",
+        "pk": 1,
+        "fields": {
+            "date_assigned": "1999-01-02",
+            "employee_id": 1,
+            "computer_id": 1
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 2,
+        "fields": {
+            "date_assigned": "2000-01-02",
+            "employee_id": 2,
+            "computer_id": 1
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 3,
+        "fields": {
+            "date_assigned": "1999-04-02",
+            "employee_id": 2,
+            "computer_id": 2
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 4,
+        "fields": {
+            "date_assigned": "2000-01-02",
+            "employee_id": 1,
+            "computer_id": 3
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 5,
+        "fields": {
+            "date_assigned": "2000-01-02",
+            "employee_id": 3,
+            "computer_id": 1
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 6,
+        "fields": {
+            "date_assigned": "2004-01-02",
+            "employee_id": 4,
+            "computer_id": 4
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 7,
+        "fields": {
+            "date_assigned": "2009-04-06",
+            "employee_id": 5,
+            "computer_id": 1
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 8,
+        "fields": {
+            "date_assigned": "2005-06-07",
+            "employee_id": 2,
+            "computer_id": 6
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 9,
+        "fields": {
+            "date_assigned": "2012-12-25",
+            "employee_id": 3,
+            "computer_id": 8
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 10,
+        "fields": {
+            "date_assigned": "2012-12-25",
+            "employee_id": 9,
+            "computer_id": 1
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 11,
+        "fields": {
+            "date_assigned": "2008-03-05",
+            "employee_id": 2,
+            "computer_id": 1
+        }
+    },
+    {
+     "model": "api.employeecomputer",
+        "pk": 11,
+        "fields": {
+            "date_assigned": "2003-01-03",
+            "employee_id": 2,
+            "computer_id": 1
+        }
+    }
+]
