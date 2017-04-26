@@ -7,3 +7,6 @@ from bangazon.api.serializers.serializer_payment_type import PaymentTypeSerializ
 from bangazon.api.serializers.serializer_department import DepartmentSerializer
 from bangazon.api.serializers.serializer_computer import ComputerSerializer
 from bangazon.api.serializers.serializer_employee import EmployeeSerializer
+from bangazon.api.serializers.serializer_employee_computer import EmployeeComputerSerializer
+from bangazon.api.serializers.serializer_employee_training import EmployeeTrainingSerializer
+from bangazon.api.serializers.serializer_order_product import OrderProductSerializer

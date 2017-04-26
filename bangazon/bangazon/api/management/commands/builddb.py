@@ -8,7 +8,7 @@ import os
 
 class Command(BaseCommand):
     """
-    Defines what the 'builddb' command should do 
+    Defines what the 'builddb' command should do
     and what the '--help' option will display to the user.
 
     Author: Blaise Roberts
@@ -28,4 +28,7 @@ class Command(BaseCommand):
         os.system("python manage.py loaddata payment_type")
         os.system("python manage.py loaddata product")
         os.system("python manage.py loaddata order")
+        os.system("python manage.py loaddata order_product")
+        os.system("python manage.py loaddata employee_training")
+        os.system("python manage.py loaddata employee_computer")
         self.stdout.write("The database has been loaded successfully.")
