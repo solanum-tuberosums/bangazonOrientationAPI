@@ -1,0 +1,162 @@
+[
+    {
+        "model": "api.employee",
+        "pk": 1,
+        "fields": {
+            "first_name": "Juan",
+            "last_name": "Swan",
+            "is_supervisor": 1,
+            "department_id": 1
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 2,
+        "fields": {
+            "first_name": "Juan",
+            "last_name": "Frond",
+            "is_supervisor": 0,
+            "department_id": 1
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 3,
+        "fields": {
+            "first_name": "Emily",
+            "last_name": "Dickenson",
+            "is_supervisor": 0,
+            "department_id": 3
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 4,
+        "fields": {
+            "first_name": "Leonardo",
+            "last_name": "The Turtle",
+            "is_supervisor": 0,
+            "department_id": 10
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 5,
+        "fields": {
+            "first_name": "Donatello",
+            "last_name": "The Turtle",
+            "is_supervisor": 0,
+            "department_id": 10
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 6,
+        "fields": {
+            "first_name": "Michaelangelo",
+            "last_name": "The Turtle",
+            "is_supervisor": 0,
+            "department_id": 10
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 7,
+        "fields": {
+            "first_name": "Raphael",
+            "last_name": "The Turtle",
+            "is_supervisor": 0,
+            "department_id": 10
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 8,
+        "fields": {
+            "first_name": "Splinter",
+            "last_name": "The Rat",
+            "is_supervisor": 1,
+            "department_id": 10
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 9,
+        "fields": {
+            "first_name": "Francis",
+            "last_name": "Meyer",
+            "is_supervisor": 0,
+            "department_id": 1
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 10,
+        "fields": {
+            "first_name": "Gina",
+            "last_name": "McMeana",
+            "is_supervisor": 1,
+            "department_id": 2
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 11,
+        "fields": {
+            "first_name": "Jimminy",
+            "last_name": "Cricket",
+            "is_supervisor": 1,
+            "department_id": 3
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 12,
+        "fields": {
+            "first_name": "Ebenezer",
+            "last_name": "Scrooger",
+            "is_supervisor": 1,
+            "department_id": 4
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 13,
+        "fields": {
+            "first_name": "Joe",
+            "last_name": "Cool",
+            "is_supervisor": 1,
+            "department_id": 5
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 14,
+        "fields": {
+            "first_name": "Mr.",
+            "last_name": "Gobblesworth",
+            "is_supervisor": 1,
+            "department_id": 7
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 15,
+        "fields": {
+            "first_name": "Steve",
+            "last_name": "Brownlee",
+            "is_supervisor": 1,
+            "department_id": 8
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 16,
+        "fields": {
+            "first_name": "Steve",
+            "last_name": "Brownlee",
+            "is_supervisor": 1,
+            "department_id": 9
+        }
+    }
+]

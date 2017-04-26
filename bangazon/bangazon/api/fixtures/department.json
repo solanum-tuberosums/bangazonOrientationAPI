@@ -1,0 +1,82 @@
+[
+    {
+        "model": "api.department",
+        "pk": 1,
+        "fields": {
+            "name": "Raw Sewage",
+            "budget": "900000000.00"
+        }
+    },
+    {
+        "model": "api.department",
+        "pk": 2,
+        "fields": {
+            "name": "Tempered Sewage",
+            "budget": "990000000.00"
+        }
+    },
+    {
+        "model": "api.department",
+        "pk": 3,
+        "fields": {
+            "name": "Juliet's Fine Dining",
+            "budget": "72934577.93"
+        }
+    },
+    {
+        "model": "api.department",
+        "pk": 4,
+        "fields": {
+            "name": "Hilbert's Washing District",
+            "budget": "72934577.93"
+        }
+    },
+    {
+        "model": "api.department",
+        "pk": 5,
+        "fields": {
+            "name": "Adminstration",
+            "budget": "1007.93"
+        }
+    },
+    {
+        "model": "api.department",
+        "pk": 6,
+        "fields": {
+            "name": "Brenda's Code-Along",
+            "budget": "0.56"
+        }
+    },
+    {
+        "model": "api.department",
+        "pk": 7,
+        "fields": {
+            "name": "Dentistry",
+            "budget": "9600.45"
+        }
+    },
+    {
+        "model": "api.department",
+        "pk": 8,
+        "fields": {
+            "name": "Joke",
+            "budget": "0.01"
+        }
+    },
+    {
+        "model": "api.department",
+        "pk": 9,
+        "fields": {
+            "name": "Headless Rubber Chickens",
+            "budget": "5.05"
+        }
+    },
+    {
+        "model": "api.department",
+        "pk": 10,
+        "fields": {
+            "name": "Martian Resources",
+            "budget": "9999999999.23"
+        }
+    }
+]
