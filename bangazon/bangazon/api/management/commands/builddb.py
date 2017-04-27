@@ -26,9 +26,19 @@ class Command(BaseCommand):
         # management.call_command('loaddata', 'department', 'computer', 'training_program',
         #     'customer', 'employee', 'payment_type', 'product_type', 'product',
         #     'order', 'order_product', 'employee_training', 'employee_computer')
-        DepartmentFactory.create_batch(size=3)
-        CustomerFactory.create_batch(size=10)
-        ComputerFactory.create_batch(size=5)
-        TrainingProgramFactory.create_batch(size=5)
-        ProductTypeFactory.create_batch(size=5)
+        DepartmentFactory.create_batch(size=10)
+        CustomerFactory.create_batch(size=100)
+        ComputerFactory.create_batch(size=100)
+        TrainingProgramFactory.generate_batch('create', size=10)
+        ProductTypeFactory.create_batch(size=10)
         EmployeeFactory.create_batch(size=100)
+        SupervisorFactory.create_batch(size=10)
+        ProductFactory.create_batch(size=50)
+        PaymentTypeFactory.create_batch(size=100)
+        OrderFactory.create_batch(size=100)
+        OrderProductFactory.create_batch(size=100)
+        EmployeeComputerFactory.create_batch(size=100)
+        EmployeeTrainingFactory.create_batch(size=30)
+
+
+
