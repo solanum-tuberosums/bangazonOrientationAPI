@@ -11,11 +11,14 @@ from bangazon.api.factories import *
 class Command(BaseCommand):
     """
     Defines the command 'builddb', which is a shortcut for running
-    all the necessary shell commands to generate our database's tables and
-    load our fixtures to our database. These commands are, in order:
+    the necessary shell commands to generate our database's tables and
+    load our data to them via Faker. These commands are, in order:
     1. python manage.py makemigrations api
     2. python manage.py migrate
-    3. python manage.py loaddata <fixtures>
+    3. (Factory Calls): Department, Customer, Computer, TrainingProgram, ProductType, Employee,
+        Supervisor, Product, PaymentType, Order, OrderProduct, EmployeeComputer, EmployeeTraining,
+        CustomerSupportSpecialist, CustomerSupportTicket
+
 
     Author: Jeremy Bakker
     """
@@ -23,9 +26,6 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         management.call_command('makemigrations', 'api')
         management.call_command('migrate')
-        # management.call_command('loaddata', 'department', 'computer', 'training_program',
-        #     'customer', 'employee', 'payment_type', 'product_type', 'product',
-        #     'order', 'order_product', 'employee_training', 'employee_computer')
         DepartmentFactory.create_batch(size=10)
         CustomerFactory.create_batch(size=100)
         ComputerFactory.create_batch(size=100)
@@ -39,6 +39,9 @@ class Command(BaseCommand):
         OrderProductFactory.create_batch(size=100)
         EmployeeComputerFactory.create_batch(size=100)
         EmployeeTrainingFactory.create_batch(size=30)
+        CustomerSupportSpecialistFactory.create_batch(size=10)
+        CustomerSupportTicketFactory.create_batch(size=15)
+        EmployeeTicketFactory.create_batch(size=15)
 
 
 
