@@ -9,7 +9,7 @@ from bangazon.api.models import *
 
 class CustomerSupportTicketViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows customer supoort ticket data to be viewed or edited
+    API endpoint that allows customer support ticket data to be viewed or edited
 
     Author: Adam Myers
     """
