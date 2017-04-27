@@ -15,7 +15,7 @@ class Order(models.Model):
     order_date(date): Refers to the date an order is made.
     customer_id(foreign key): Links to Customer(CustomerID) with a foreign key
 
-    Author: Jeremy Bakker
+    Author: Jeremy Bakker, Adam Myers
     """
 
     payment_type_id = models.DecimalField(max_digits=20, decimal_places=0, blank=True, null=True)
