@@ -13,3 +13,10 @@ class CustomerFactory(factory.django.DjangoModelFactory):
     first_name = factory.Faker('first_name')
     last_name = factory.Faker('last_name')
     date_created = factory.Faker('date')
+
+class ComputerFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = Computer
+    serial_number = factory.Faker('uuid4')
+    date_purchased = factory.Faker('date')
+    date_decommissioned = None
