@@ -5,10 +5,7 @@ bangazon api custom command to build database
 from django.core import management
 from django.core.management.base import BaseCommand
 from django.core.management.commands import makemigrations
-
 from bangazon.api.factories import *
-
-
 
 
 class Command(BaseCommand):
@@ -29,6 +26,9 @@ class Command(BaseCommand):
         # management.call_command('loaddata', 'department', 'computer', 'training_program',
         #     'customer', 'employee', 'payment_type', 'product_type', 'product',
         #     'order', 'order_product', 'employee_training', 'employee_computer')
-        DepartmentFactory.create_batch(size=10)
+        DepartmentFactory.create_batch(size=3)
         CustomerFactory.create_batch(size=10)
-        ComputerFactory.create_batch(size=50)
+        ComputerFactory.create_batch(size=5)
+        TrainingProgramFactory.create_batch(size=5)
+        ProductTypeFactory.create_batch(size=5)
+        EmployeeFactory.create_batch(size=100)
