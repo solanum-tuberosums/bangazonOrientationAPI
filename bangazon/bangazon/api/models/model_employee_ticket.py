@@ -12,7 +12,7 @@ class EmployeeTicket(models.Model):
 
     ----Fields----
     employee_id(foreign key): links to Employee(EmployeeID) with a foregin key
-    customer_support_ticket_id(foreign key): links to TrainingProgram(TrainingProgramID) with a foregin key
+    customer_support_ticket_id(foreign key): links to CustomerSupportTicket(CustomerSupportTicketID) with a foregin key
 
     Author: Adam Myers
     """
