@@ -17,7 +17,6 @@ class CustomerViewSet(viewsets.ModelViewSet):
     """
 
     queryset = Customer.objects.all()
-    serializer_class = CustomerSerializer
 
     def get_serializer_class(self):
         if self.request.user.is_authenticated:

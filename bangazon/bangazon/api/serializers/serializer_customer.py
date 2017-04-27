@@ -34,4 +34,3 @@ class AdminCustomerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Customer
         exclude = ()
-
