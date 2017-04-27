@@ -13,7 +13,7 @@ class CustomerSupportTicket(models.Model):
     ----Fields----
     customer_id(foreign key): refers to the Customer(CustomerID) the support ticket is assigned to with a foreign key
     ticket_description(character): description of what the ticket is about
-    order_id(decimal): refers to the order id but not through a foreign key to allow to be set null
+    order_id(foreign key): refers to the Order(OrderID) the ticket is associated with
     date_created(date): the date a ticket was added to the database
     resolution_description(character): description of how to resolve the ticket
     date_resolved(date): the date a ticket was resolved
@@ -23,7 +23,7 @@ class CustomerSupportTicket(models.Model):
 
     customer_id = models.ForeignKey(Customer)
     ticket_description = models.CharField(max_length=200)
-    order_id = models.DecimalField(max_digits=100, decimal_places=0, blank=True, null=True)
+    order_id = models.ForeignKey(Order)
     date_created = models.DateField()
     resolution_description = models.CharField(max_length=200, blank=True, null=True)
     date_resolved = models.DateField(blank=True, null=True)
