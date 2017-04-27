@@ -4,12 +4,12 @@ An open API for Bangazon, a fictitious company of Nashville Software School, bui
 
 ### This API will expose these resources: 
 
-Fields written in *italics* are reserved for admin users
+Fields written in **bold* font are reserved for admin users
 
 1. Customer
     - First Name
     - Last Name
-    - *Date Created*
+    - **Date Created**
 1. Order
     - Payment Type
     - Order Date
