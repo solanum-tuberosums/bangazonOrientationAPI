@@ -1,46 +1,44 @@
 import factory
 from bangazon.api.models import *
-from faker import Faker
-fake = Faker()
 
 class DepartmentFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Department
-    name = fake.company()
-    budget = fake.random_int()
+    name = factory.Faker('company')
+    budget = factory.Faker('random_int', min=1, max=100)
 
 class CustomerFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Customer
-    first_name = fake.first_name()
-    last_name = fake.last_name()
-    date_created = fake.date()
+    first_name = factory.Faker('first_name')
+    last_name = factory.Faker('last_name')
+    date_created = factory.Faker('date')
 
 class ComputerFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Computer
-    serial_number = fake.ean13()
-    date_purchased = fake.date()
+    serial_number = factory.Faker('ean13')
+    date_purchased = factory.Faker('date')
     date_decommissioned = None
 
 class ProductTypeFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = ProductType
-    label = fake.word()
+    label = factory.Faker('word')
 
 class TrainingProgramFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = TrainingProgram
-    name = fake.bs()
-    start_date = fake.date()
-    end_date = fake.date()
-    max_enrollment = fake.random_int(min=10, max=50)
+    name = factory.Faker('bs')
+    start_date = factory.Faker('date')
+    end_date = factory.Faker('date')
+    max_enrollment = factory.Faker('random_int', min=10, max=100)
 
 class EmployeeFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Employee
-    first_name = fake.first_name()
-    last_name = fake.last_name()
+    first_name = factory.Faker('first_name')
+    last_name = factory.Faker('last_name')
     is_supervisor = 0
     department_id = factory.Iterator(Department.objects.all())
 
@@ -50,25 +48,25 @@ class SupervisorFactory(EmployeeFactory):
 class ProductFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Product
-    price = fake.random_int()
-    title = fake.word()
-    description = fake.text()
+    price = factory.Faker('random_int')
+    title = factory.Faker('word')
+    description = factory.Faker('text')
     product_type = factory.Iterator(ProductType.objects.all())
     customer = factory.Iterator(Customer.objects.all())
 
 class PaymentTypeFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = PaymentType
-    account_label = fake.word()
-    account_type = fake.credit_card_provider()
-    account_number = fake.credit_card_number()
+    account_label = factory.Faker('word')
+    account_type = factory.Faker('credit_card_provider')
+    account_number = factory.Faker('credit_card_number')
     customer_id = factory.Iterator(Customer.objects.all())
 
 class OrderFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Order
     payment_type_id = None
-    order_date = fake.date()
+    order_date = factory.Faker('date')
     customer_id = factory.Iterator(Customer.objects.all())
 
 class OrderProductFactory(factory.django.DjangoModelFactory):
@@ -80,7 +78,7 @@ class OrderProductFactory(factory.django.DjangoModelFactory):
 class EmployeeComputerFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = EmployeeComputer
-    date_assigned = fake.date()
+    date_assigned = factory.Faker('date')
     employee_id = factory.Iterator(Employee.objects.all())
     computer_id = factory.Iterator(Computer.objects.all())
 
@@ -89,13 +87,3 @@ class EmployeeTrainingFactory(factory.django.DjangoModelFactory):
         model = EmployeeTraining
     training_id = factory.Iterator(TrainingProgram.objects.all())
     employee_id = factory.Iterator(Employee.objects.all())
-
-
-
-
-
-
-
-
-
-
