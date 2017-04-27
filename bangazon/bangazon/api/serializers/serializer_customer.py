@@ -17,4 +17,13 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Customer
+        fields = ('url', 'first_name', 'last_name')
+
+class AdminCustomerSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Admin Customer Serializer
+    """
+    class Meta:
+        model = Customer
         exclude = ()
+
