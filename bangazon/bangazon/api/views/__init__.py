@@ -7,6 +7,7 @@ from bangazon.api.views.view_payment_type import PaymentTypeViewSet
 from bangazon.api.views.view_department import DepartmentViewSet
 from bangazon.api.views.view_computer import ComputerViewSet
 from bangazon.api.views.view_employee import EmployeeViewSet
+from bangazon.api.views.view_customer_support_ticket import CustomerSupportTicketViewSet
 
 __all__ = [
     'ProductTypeViewSet',
@@ -18,4 +19,5 @@ __all__ = [
     'DepartmentViewSet',
     'EmployeeViewSet',
     'ComputerViewSet',
+    'CustomerSupportTicketViewSet',
     ]
