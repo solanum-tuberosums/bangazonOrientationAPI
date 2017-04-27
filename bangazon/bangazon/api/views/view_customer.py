@@ -3,8 +3,10 @@ bangazon api view configuration for customer
 """
 
 from rest_framework import viewsets
-from bangazon.api.serializers import *
+from bangazon.api.serializers import CustomerSerializer, AdminCustomerSerializer
 from bangazon.api.models import *
+
+
 
 
 class CustomerViewSet(viewsets.ModelViewSet):
@@ -15,4 +17,9 @@ class CustomerViewSet(viewsets.ModelViewSet):
     """
 
     queryset = Customer.objects.all()
-    serializer_class = CustomerSerializer
+
+    def get_serializer_class(self):
+        if self.request.user.is_authenticated:
+            return AdminCustomerSerializer
+        else:
+            return CustomerSerializer
