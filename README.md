@@ -2,11 +2,14 @@
 
 An open API for Bangazon, a fictitious company of Nashville Software School, built with the Django REST framework. The initial version is for internal consumption only, and will not require permissions to access, or manipulate, any resources. 
 
-### This API will expose these resources:
+### This API will expose these resources: 
+
+Fields written in **bold** font are reserved for super users.
+
 1. Customer
     - First Name
     - Last Name
-    - Date Created
+    - **Date Created**
 1. Order
     - Payment Type
     - Order Date
@@ -44,10 +47,10 @@ An open API for Bangazon, a fictitious company of Nashville Software School, bui
 
 
 ## Requirements/Dependencies
-### Install Python
+#### Install Python
 [Python 3.6.0](https://wiki.python.org/moin/BeginnersGuide/Download) (click for instructions for installing)
 
-### Install Django and Django REST framework
+#### Install Django and Django REST framework
 ```
 pip install django
 pip install djangorestframework
@@ -62,6 +65,7 @@ pip install djangorestframework
     ```
     cd bangazonOrientationAPI/bangazon/
     python manage.py builddb
+    python manage.py createsuperuser
     python manage.py runserver
     ```
 1. View in your browser by going to [localhost:8000](http://localhost:8000/)
