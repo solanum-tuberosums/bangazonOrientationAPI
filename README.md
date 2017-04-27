@@ -4,7 +4,7 @@ An open API for Bangazon, a fictitious company of Nashville Software School, bui
 
 ### This API will expose these resources: 
 
-Fields written in **bold** font are reserved for admin users
+Fields written in **bold** font are reserved for super users.
 
 1. Customer
     - First Name
