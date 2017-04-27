@@ -10,3 +10,5 @@ from bangazon.api.models.model_employee import Employee
 from bangazon.api.models.model_employee_computer import EmployeeComputer
 from bangazon.api.models.model_employee_training import EmployeeTraining
 from bangazon.api.models.model_order_product import OrderProduct
+from bangazon.api.models.model_customer_support_ticket import CustomerSupportTicket
+from bangazon.api.models.model_employee_ticket import EmployeeTicket
