@@ -18,5 +18,7 @@ router.register(r'customer_support_ticket', CustomerSupportTicketViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
+    url(r'^api-token-auth/', obtain_auth_token),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
+
