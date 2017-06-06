@@ -2,6 +2,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework import routers
 from bangazon.api.views import *
+from rest_framework.authtoken.views import obtain_auth_token
 
 router = routers.DefaultRouter()
 
