@@ -20,7 +20,7 @@ router.register(r'customer_support_ticket', CustomerSupportTicketViewSet)
 urlpatterns = [
     url(r'^login$', login_user, name='login'),
     url(r'^logout$', user_logout, name='logout'),
-    url(r'^register$', register, name='register'),
+    url(r'^register$', register_user, name='register'),
     url(r'^', include(router.urls)),
     url(r'^api-token-auth/', obtain_auth_token),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
