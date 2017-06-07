@@ -2,10 +2,7 @@ from django.template import RequestContext
 from django.contrib.auth import login, authenticate
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render
-from website.models.order_model import Order
-from website.models.payment_type_model import PaymentType
 from django.utils import timezone
-from website.forms.login_form import LoginForm
 
 def login_user(request):
     '''Handles the creation of a new user for authentication

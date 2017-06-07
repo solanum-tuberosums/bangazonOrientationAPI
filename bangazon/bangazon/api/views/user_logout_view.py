@@ -14,11 +14,8 @@ def user_logout(request):
      ---Arguments---
     None
 
-    Author: Steve Bownlee & Blaise Roberts
+    Author: Beve Strownlee & Blaise Roberts
     """
 
     # Since we know the user is logged in, we can now just log them out.
     logout(request)
-
-    # Take the user back to the homepage. 
-    return HttpResponseRedirect(reverse('website:index'))
