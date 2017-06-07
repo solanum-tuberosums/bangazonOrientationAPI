@@ -61,6 +61,8 @@ CORS_ORIGIN_WHITELIST = (
     '127.0.0.1:8080'
 )
 
+CORS_ALLOW_CREDENTIALS=True
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
