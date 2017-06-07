@@ -1,8 +1,15 @@
 from django.contrib.auth import logout, login, authenticate
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from bangazon.api.views.login_user_view import login_user
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.authtoken.models import Token
+from django.http import HttpResponse, HttpResponseRedirect, Http404
 
+import json
+
+@csrf_exempt
 def register_user(request):
     '''Handles the creation of a new user for authentication
     Method arguments:
@@ -25,51 +32,8 @@ def register_user(request):
     # Commit the user to the database by saving it
     new_user.save()
 
-    return login_user(request)
+    token = Token.objects.create(user=new_user)
 
+    data = json.dumps({"token":token.key})
 
-# def register(request):
-    """
-    Handles the creation of a new user for authentication
-    ---Arguments---
-    None
-    ---GET---
-    Renders register.html
-        ---Context---
-        'user_form': the form from user_form.py
-    ---POST---
-    runs the login_user function
-    Author: Steve Browlee
-    """
-
-    # A boolean value for telling the template 
-    # whether the registration was successful.
-    # Set to False initially. Code changes value to True when registration 
-    # succeeds.
-    # registered = False
-
-    # Create a new user by invoking the `create_user` helper method
-    # on Django's built-in User model
-    # if request.method == 'POST':
-    #     user_form = UserForm(data=request.POST)
-
-    #     if user_form.is_valid():
-    #         # Save the user's form data to the database.
-    #         user = user_form.save()
-
-    #         # Now we hash the password with the set_password method.
-    #         # Once hashed, we can update the user object.
-    #         user.set_password(user.password)
-    #         user.save()
-
-    #         # Update our variable to tell the template 
-    #         # registration was successful.
-    #         registered = True
-
-    #     return login_user(request)
-
-    # elif request.method == 'GET':
-    #     user_form = UserForm()
-    #     template_name = 'register.html'
-    #     return render(request, template_name, {'user_form': user_form})
-
+    return HttpResponse(data, content_type='application/json')
