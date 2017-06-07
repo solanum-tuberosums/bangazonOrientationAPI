@@ -1,0 +1,1 @@
+from bangazon.api.forms.user_form import UserForm
