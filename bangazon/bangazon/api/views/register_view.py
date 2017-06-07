@@ -2,7 +2,10 @@ from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from bangazon.api.views.login_user_view import login_user
+from django.views.decorators.csrf import csrf_exempt
+from bangazon.api.forms import UserForm
 
+@csrf_exempt
 def register(request):
     """
     Handles the creation of a new user for authentication
