@@ -8,7 +8,7 @@ from bangazon.api.views.view_department import DepartmentViewSet
 from bangazon.api.views.view_computer import ComputerViewSet
 from bangazon.api.views.view_employee import EmployeeViewSet
 from bangazon.api.views.view_customer_support_ticket import CustomerSupportTicketViewSet
-from bangazon.api.views.login_user_view import login_user
+from bangazon.api.views.get_order_view import get_order
 from bangazon.api.views.register_view import register_user
 from bangazon.api.views.user_logout_view import user_logout
 
@@ -23,7 +23,7 @@ __all__ = [
     'EmployeeViewSet',
     'ComputerViewSet',
     'CustomerSupportTicketViewSet',
-    'login_user',
+    'get_order',
     'register_user',
     'user_logout',
     ]

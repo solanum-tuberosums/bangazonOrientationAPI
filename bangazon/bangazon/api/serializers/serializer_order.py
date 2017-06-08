@@ -14,6 +14,9 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
 
 	Author: Jeremy Bakker
 	"""
+	id = serializers.IntegerField(read_only=True)
+	customer_id = serializers.IntegerField(source='customer_id.id', read_only=True)
+
 
 	class Meta:
 		model = Order

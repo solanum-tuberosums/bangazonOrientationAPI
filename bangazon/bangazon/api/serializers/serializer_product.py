@@ -13,7 +13,10 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
 	
 	Author: Will Sims
     """
+    product_type = serializers.CharField(source='product_type.label', read_only=True)
+    customer = serializers.CharField(source='customer.first_name', read_only=True)
+    id = serializers.IntegerField(read_only=True)
 
     class Meta:
         model = Product
-        exclude = ()
+        fields = '__all__'

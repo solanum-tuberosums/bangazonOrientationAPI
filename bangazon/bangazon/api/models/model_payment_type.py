@@ -4,6 +4,7 @@ bangazon api model configuration for payment type
 
 from django.db import models
 from bangazon.api.models import *
+from django.contrib.auth.models import User
 
 
 class PaymentType(models.Model):
@@ -22,7 +23,7 @@ class PaymentType(models.Model):
 	account_label = models.CharField(max_length=20)
 	account_type = models.CharField(max_length=20)
 	account_number = models.DecimalField(max_digits=20, decimal_places=0)
-	customer_id = models.ForeignKey(Customer, on_delete=models.CASCADE)
+	customer_id = models.ForeignKey(User, on_delete=models.CASCADE)
 
 	def __str__(self):
 		return self.account_label	

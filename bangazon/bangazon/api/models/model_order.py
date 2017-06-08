@@ -4,6 +4,8 @@ bangazon api model configuration for order
 
 from django.db import models
 from bangazon.api.models import *
+from django.contrib.auth.models import User
+
 
 
 class Order(models.Model):
@@ -20,7 +22,7 @@ class Order(models.Model):
 
     payment_type_id = models.DecimalField(max_digits=20, decimal_places=0, blank=True, null=True)
     order_date = models.DateField()
-    customer_id = models.ForeignKey(Customer)
+    customer_id = models.ForeignKey(User)
 
     def __str__(self):
         return "Order #{} created on {} by {}".format(self.pk, self.order_date, self.customer_id)

@@ -14,6 +14,8 @@ class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
 
 	Author: Blaise Roberts
 	"""
+	customer_id = serializers.IntegerField(source='customer_id.id', read_only=True)
+
 
 	class Meta:
 		model = PaymentType

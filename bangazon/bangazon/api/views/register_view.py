@@ -2,7 +2,6 @@ from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
-from bangazon.api.views.login_user_view import login_user
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.authtoken.models import Token
 from django.http import HttpResponse, HttpResponseRedirect, Http404

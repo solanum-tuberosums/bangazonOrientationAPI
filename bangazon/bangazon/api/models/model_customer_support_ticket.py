@@ -4,6 +4,7 @@ bangazon api model configuration for customer support ticket
 
 from django.db import models
 from bangazon.api.models import *
+from django.contrib.auth.models import User
 
 
 class CustomerSupportTicket(models.Model):
@@ -21,7 +22,7 @@ class CustomerSupportTicket(models.Model):
     Author: Adam Myers
     """
 
-    customer_id = models.ForeignKey(Customer)
+    customer_id = models.ForeignKey(User)
     ticket_description = models.CharField(max_length=200)
     order_id = models.ForeignKey(Order)
     date_created = models.DateField()

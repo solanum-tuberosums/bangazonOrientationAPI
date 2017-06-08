@@ -13,6 +13,7 @@ class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
 
     Author: Adam Myers
     """
+
     class Meta:
         model = ProductType
         exclude = ()

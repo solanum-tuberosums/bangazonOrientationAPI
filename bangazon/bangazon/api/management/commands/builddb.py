@@ -27,7 +27,7 @@ class Command(BaseCommand):
         management.call_command('makemigrations', 'api')
         management.call_command('migrate')
         DepartmentFactory.create_batch(size=10)
-        CustomerFactory.create_batch(size=100)
+        UserFactory.create_batch(size=100)
         ComputerFactory.create_batch(size=100)
         TrainingProgramFactory.generate_batch('create', size=10)
         ProductTypeFactory.create_batch(size=10)

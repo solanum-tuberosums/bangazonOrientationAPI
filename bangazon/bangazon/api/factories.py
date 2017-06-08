@@ -5,6 +5,10 @@ fixtures
 
 import factory
 from bangazon.api.models import *
+from django.contrib.auth.models import User
+import datetime
+from django.utils import timezone
+
 
 
 class DepartmentFactory(factory.django.DjangoModelFactory):
@@ -23,7 +27,7 @@ class DepartmentFactory(factory.django.DjangoModelFactory):
     name = factory.Faker('company')
     budget = factory.Faker('random_int', min=1, max=100)
 
-class CustomerFactory(factory.django.DjangoModelFactory):
+class UserFactory(factory.django.DjangoModelFactory):
     """
     This class creates data for the customer table in the API's database.
 
@@ -36,10 +40,16 @@ class CustomerFactory(factory.django.DjangoModelFactory):
     """
     
     class Meta:
-        model = Customer
+        model = User
     first_name = factory.Faker('first_name')
     last_name = factory.Faker('last_name')
-    date_created = factory.Faker('date')
+    username = factory.Faker('uuid4')
+    email = factory.Faker('email')
+    is_staff = "0"
+    is_active = "1"
+    password = factory.Faker('uuid4')
+    last_login = timezone.now()
+    is_superuser = "0"
 
 class ComputerFactory(factory.django.DjangoModelFactory):
     """
@@ -159,7 +169,7 @@ class ProductFactory(factory.django.DjangoModelFactory):
     title = factory.Faker('word')
     description = factory.Faker('text')
     product_type = factory.Iterator(ProductType.objects.all())
-    customer = factory.Iterator(Customer.objects.all())
+    customer = factory.Iterator(User.objects.all())
 
 class PaymentTypeFactory(factory.django.DjangoModelFactory):
     """
@@ -179,7 +189,7 @@ class PaymentTypeFactory(factory.django.DjangoModelFactory):
     account_label = factory.Faker('word')
     account_type = factory.Faker('credit_card_provider')
     account_number = factory.Faker('credit_card_number')
-    customer_id = factory.Iterator(Customer.objects.all())
+    customer_id = factory.Iterator(User.objects.all())
 
 class OrderFactory(factory.django.DjangoModelFactory):
     """
@@ -197,7 +207,7 @@ class OrderFactory(factory.django.DjangoModelFactory):
         model = Order
     payment_type_id = None
     order_date = factory.Faker('date')
-    customer_id = factory.Iterator(Customer.objects.all())
+    customer_id = factory.Iterator(User.objects.all())
 
 class OrderProductFactory(factory.django.DjangoModelFactory):
     """
@@ -266,7 +276,7 @@ class CustomerSupportTicketFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = CustomerSupportTicket
-    customer_id = factory.Iterator(Customer.objects.all())
+    customer_id = factory.Iterator(User.objects.all())
     ticket_description = factory.Faker('paragraphs', nb=1)
     order_id = factory.Iterator(Order.objects.all())
     date_created = factory.Faker('date')

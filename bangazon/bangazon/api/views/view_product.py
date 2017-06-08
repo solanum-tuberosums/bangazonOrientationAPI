@@ -5,7 +5,7 @@ bangazon api view configuration for product
 from rest_framework import viewsets
 from bangazon.api.serializers import *
 from bangazon.api.models import *
-
+from rest_framework import filters
 
 class ProductViewSet(viewsets.ModelViewSet):
     """
@@ -16,3 +16,5 @@ class ProductViewSet(viewsets.ModelViewSet):
 
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+    filter_backends = (filters.SearchFilter,)
+    search_fields = ('title', 'description')

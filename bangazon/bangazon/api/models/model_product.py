@@ -4,6 +4,7 @@ bangazon api model configuration for product
 
 from django.db import models
 from bangazon.api.models import *
+from django.contrib.auth.models import User
 
 
 class Product(models.Model):
@@ -24,7 +25,7 @@ class Product(models.Model):
     title = models.CharField(max_length=40)
     description = models.TextField(max_length=256)
     product_type = models.ForeignKey(ProductType)
-    customer = models.ForeignKey(Customer)
+    customer = models.ForeignKey(User)
 
     def __str__(self):
         return self.title
