@@ -3,6 +3,7 @@ from django.contrib.auth import login, authenticate
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render
 from django.utils import timezone
+import json
 
 def login_user(request):
     '''Handles the creation of a new user for authentication
@@ -15,14 +16,22 @@ def login_user(request):
 
     # Obtain the context for the user's request.
     context = RequestContext(request)
+    req_body = json.loads(request.body.decode())
+
 
     # If the request is a HTTP POST, try to pull out the relevant information.
     if request.method == 'POST':
         
         # Use the built-in authenticate method to verify
-        username=request.POST['username']
-        password=request.POST['password']
+        username=req_body['username']
+        password=req_body['password']
+
+        print("\n\n{}\n\n".format(username))
+        print("\n\n{}\n\n".format(password))
+
         authenticated_user = authenticate(username=username, password=password)
+
+        print("\n\n{}\n\n".format(authenticated_user))
 
         # If authentication was successful, log the user in
         if authenticated_user is not None:

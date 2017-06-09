@@ -9,6 +9,7 @@ router = routers.DefaultRouter()
 router.register(r'payment_types', PaymentTypeViewSet)
 router.register(r'products', ProductViewSet)
 router.register(r'product_type', ProductTypeViewSet)
+
 router.register(r'customers', CustomerViewSet)
 router.register(r'order', OrderViewSet)
 router.register(r'employee', EmployeeViewSet)
@@ -23,6 +24,9 @@ urlpatterns = [
     url(r'^register$', register_user, name='register'),
     url(r'^', include(router.urls)),
     url(r'^api-token-auth/', obtain_auth_token),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^products/type', ProductsInTypeViewSet.as_view(),),
+    url(r'^order/', UserOrderViewSet.as_view(),),
+
 ]
 

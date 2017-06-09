@@ -3,7 +3,9 @@ bangazon api serializer configuration for product type
 """
 
 from rest_framework import serializers
-from bangazon.api.models import *
+
+from bangazon.api.models import ProductType
+# from api.serializers import ProductSerializer
 
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -13,6 +15,8 @@ class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
 
     Author: Adam Myers
     """
+    id = serializers.IntegerField(read_only=True)
     class Meta:
         model = ProductType
         exclude = ()
+        depth = 1

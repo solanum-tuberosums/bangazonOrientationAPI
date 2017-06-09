@@ -7,6 +7,7 @@ from bangazon.api.serializers import *
 from bangazon.api.models import *
 
 
+
 class ProductTypeViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows product type data to be viewed or edited
@@ -16,3 +17,4 @@ class ProductTypeViewSet(viewsets.ModelViewSet):
 
     queryset = ProductType.objects.all()
     serializer_class = ProductTypeSerializer
+

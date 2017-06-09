@@ -15,7 +15,7 @@ class ProductType(models.Model):
     Author: Adam Myers
     """
     
-    label = models.CharField(max_length=50)
+    title = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.label
+        return self.title
