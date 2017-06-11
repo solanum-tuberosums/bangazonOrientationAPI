@@ -23,8 +23,8 @@ class Product(models.Model):
     price = models.DecimalField(decimal_places=2, max_digits=10)
     title = models.CharField(max_length=40)
     description = models.TextField(max_length=256)
-    product_type = models.ForeignKey(ProductType)
-    customer = models.ForeignKey(Customer)
+    product_type = models.ForeignKey(ProductType, null=True)
+    customer = models.ForeignKey(Customer, null=True)
 
     def __str__(self):
         return self.title

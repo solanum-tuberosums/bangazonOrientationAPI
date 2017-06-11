@@ -26,7 +26,9 @@ urlpatterns = [
     url(r'^api-token-auth/', obtain_auth_token),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^products/type', ProductsInTypeViewSet.as_view(),),
+    url(r'^products/detail/(?P<pk>[0-9]+)/$', ProductDetailViewSet),
     url(r'^order/', UserOrderViewSet.as_view(),),
+    url(r'^sell$', ProductView.as_view(), name='sell')
 
 ]
 

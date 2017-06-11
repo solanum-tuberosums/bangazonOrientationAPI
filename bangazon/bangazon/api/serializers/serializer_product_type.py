@@ -19,4 +19,3 @@ class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ProductType
         exclude = ()
-        depth = 1
